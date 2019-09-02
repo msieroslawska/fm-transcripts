@@ -248,11 +248,11 @@ through coercive equality.
 53
 00:02:54.520 --> 00:02:57.280
 So you could do a check like this,
-you could have a workshop one and
+you could have a workshop1 and
 
 54
 00:02:57.280 --> 00:03:00.220
-a workshop two, and
+a workshop2, and
 there's a topic property on there.
 
 55
@@ -393,7 +393,7 @@ Most people seem to be okay with that.
 
 83
 00:04:48.177 --> 00:04:54.342
-Even though JFLint says no no, most other
+Even though JSLint says no no, most other
 people have those linting rules turned on.
 
 84
@@ -434,7 +434,7 @@ likely that a problem will occur.
 91
 00:05:20.630 --> 00:05:23.330
 It's not checking if your
-programming is correct.
+program is correct.
 
 92
 00:05:23.330 --> 00:05:26.670

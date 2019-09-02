@@ -456,11 +456,11 @@ So let's code that up.
 97
 00:06:33.310 --> 00:06:38.537
 We have an else if
-(typeof match == "string"
+typeof match is a string
 
 98
 00:06:38.537 --> 00:06:45.040
-&amp;&amp; match.trim() !) Is not
+and match.trim is not
 equal to the empty string.
 
 99
@@ -600,7 +600,7 @@ coercion from string to number.
 
 127
 00:09:00.240 --> 00:09:06.850
-All right, so if typeof match == "Number",
+All right, so if typeof match equals number,
 and then let's just refresh.
 
 128

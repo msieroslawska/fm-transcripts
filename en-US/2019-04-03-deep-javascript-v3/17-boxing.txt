@@ -2,7 +2,7 @@
 >> Kyle Simpson: I referenced a bit earlier a sort of magical behavior like accessing properties on primitive values. Remember, you access a length on a primitive string or some method on a primitive number, for example. So how does that work? How is it that we access the .length of some string value here?
 
 [00:00:23]
-This DOM elements value is always a string. So how do we access that .length? Well, it turns out that's called boxing. It's a form of implicit coercion. It's not called out in the same way in the abstract operations. But I think it absolutely in spirit is an implicit coercion.
+This DOM element's value is always a string. So how do we access that .length? Well, it turns out that's called boxing. It's a form of implicit coercion. It's not called out in the same way in the abstract operations. But I think it absolutely in spirit is an implicit coercion.
 
 [00:00:41]
 It is saying you have this thing that is not an object and you're trying to use it as if it is an object. Me, JavaScript I'm gonna be helpful and go ahead and make it into an object for you. The only other option would be for the JavaScript to throw an exception that said you're trying to access a property on an primitive value.

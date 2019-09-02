@@ -3,7 +3,7 @@ WEBVTT
 1
 00:00:00.250 --> 00:00:02.370
 &gt;&gt; Kyle Simpson: If we're not talking
-about Knowles and undefines, but
+about nulls and undefined, but
 
 2
 00:00:02.370 --> 00:00:07.900
@@ -23,7 +23,7 @@ do numeric comparison.
 5
 00:00:17.920 --> 00:00:21.300
 You'll notice four different
-places it calls the two number.
+places it calls the toNumber.
 
 6
 00:00:21.300 --> 00:00:25.190
@@ -32,7 +32,7 @@ but the other one is string,
 
 7
 00:00:25.190 --> 00:00:29.196
-then call two number on the string,
+then call toNumber on the string,
 so I can do a numeric comparison.
 
 8
@@ -99,12 +99,12 @@ So how do we see that playing out?
 
 21
 00:01:14.630 --> 00:01:17.350
-Well, if I have a string on a number,
+Well, if I have a string and a number,
 
 22
 00:01:17.350 --> 00:01:21.260
 like I am on line one, that's a number and
-online too, it's a string.
+in line two, it's a string.
 
 23
 00:01:21.260 --> 00:01:25.850
@@ -133,16 +133,16 @@ string, especially if one of them is
 28
 00:01:39.750 --> 00:01:44.790
 definitely a number, then an exactly
-the same way as I allow this with the last
+the same way as I allow this with the less
 
 29
 00:01:44.790 --> 00:01:49.320
-things sign, several sides ago,
+than sign, several slides ago,
 why not also allow with the double equals,
 
 30
 00:01:50.350 --> 00:01:55.840
-why not say that this code online for
+why not say that this code in line four
 is more noisy unnecessarily so
 
 31
@@ -195,7 +195,7 @@ complex code if I would allow arrays and
 
 41
 00:02:34.550 --> 00:02:38.310
-objects and bullions and all kinds of
+objects and Booleans and all kinds of
 other types to come into that comparison.
 
 42
@@ -228,7 +228,7 @@ all the members of your development.
 
 48
 00:02:58.270 --> 00:03:01.512
-&gt;&gt; Speaker 2: Look, numerical strengths
+&gt;&gt; Speaker 2: Look, numerical strings
 in both cases, they could blow up,
 
 49
@@ -238,7 +238,7 @@ wouldn't they?
 50
 00:03:03.070 --> 00:03:06.109
 It wasn't both numerical
-strengths like from forum.
+strings like from forum.
 
 51
 00:03:06.109 --> 00:03:07.522
@@ -300,7 +300,7 @@ that said 3.7 and a string that said.
 63
 00:03:38.000 --> 00:03:43.120
 3.07 to equal each other, those strings
-are equal and those numbers learn.
+aren't equal and those numbers aren't equal.
 
 64
 00:03:43.120 --> 00:03:45.260
@@ -401,11 +401,11 @@ something that's not already a primitive,
 84
 00:04:47.060 --> 00:04:50.370
 guess what we invoke our
-friend to primitive.
+friend toPrimitive.
 
 85
 00:04:50.370 --> 00:04:53.350
-We invoke the two primitive
+We invoke the toPrimitive
 abstract operation.
 
 86
@@ -415,7 +415,7 @@ We already looked at that.
 87
 00:04:54.200 --> 00:04:58.502
 Remember that's the one that calls
-value over two string or whatever.
+value over toString or whatever.
 
 88
 00:04:58.502 --> 00:05:03.310
@@ -500,8 +500,7 @@ guess what, false, they are not equal.
 
 105
 00:06:00.920 --> 00:06:04.400
-So in other words, we would invoke the two
-primitive and get two primitives, and
+So in other words, we would invoke the toPrimitive and get two primitives, and
 
 106
 00:06:04.400 --> 00:06:07.650

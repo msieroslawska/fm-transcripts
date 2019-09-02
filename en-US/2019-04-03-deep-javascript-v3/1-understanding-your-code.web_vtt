@@ -219,7 +219,7 @@ it tells us exactly what happens.
 46
 00:02:46.840 --> 00:02:51.300
 It grabs the old value and
-does the two number operation on it.
+does the ToNumber operation on it.
 
 47
 00:02:51.300 --> 00:02:53.350
@@ -309,7 +309,7 @@ having a more clear mental model,
 65
 00:03:48.440 --> 00:03:50.940
 and the only way that I got
-that was reading this back.
+that was reading the spec.
 
 66
 00:03:50.940 --> 00:03:52.900

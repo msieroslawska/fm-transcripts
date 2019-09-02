@@ -17,7 +17,7 @@ I've written a number of books including the You Don't Know JS book series. A lo
 You can read those for free or you can purchase them. I always appreciate purchases if you like those. So I wanna talk to you a little bit about why we're gonna jump into JavaScript so much more deeply. Rather than a broad survey of every kind of framework and acronym that's possible, why are we diving deep into JavaScript, and why does that even matter today?
 
 [00:01:53]
-Because it seems the trend is nobody even writes JavaScript anymore. They write something else, whether it's TypeScript or an entirely different language like Go or Closure. But nobody seems to really write their JavaScript. I mean, nobody even ships JavaScript that they wrote anymore. They ship the code that 14 layers of Babble transformations have done.
+Because it seems the trend is nobody even writes JavaScript anymore. They write something else, whether it's TypeScript or an entirely different language like Go or Closure. But nobody seems to really write their JavaScript. I mean, nobody even ships JavaScript that they wrote anymore. They ship the code that 14 layers of Babel transformations have done.
 
 [00:02:13]
 So why does it even matter why we learn and understand and why should we learn and understand JavaScript? So I wanna, just a quick brief, this is an overview of what we're gonna be covering. This is obviously very simple code, but this is actually something that I experienced or I learned just recently, in the preparation and buildup to this course.

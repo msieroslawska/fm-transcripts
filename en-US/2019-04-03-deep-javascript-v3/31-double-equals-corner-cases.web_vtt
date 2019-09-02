@@ -183,12 +183,12 @@ Well, here's the algorithm at play.
 39
 00:02:17.950 --> 00:02:21.400
 Number one, we start with
-the workshop one students not, or
+the workshop1Students not, or
 
 40
 00:02:21.400 --> 00:02:24.790
 equal to the negation of
-the workshop two students.
+the workshop2Students.
 
 41
 00:02:24.790 --> 00:02:27.880
@@ -252,7 +252,7 @@ which it shouldn't.
 53
 00:03:05.490 --> 00:03:10.420
 But it does become the number zero instead
-of nano and this one needs to become
+of NaN and this one needs to become
 
 54
 00:03:10.420 --> 00:03:16.380
@@ -299,8 +299,8 @@ does it make sense for
 
 63
 00:03:45.380 --> 00:03:50.210
-workshop one students to be coercively
-compared to workshop two students?
+workshop1Students to be coercively
+compared to workshop2Students?
 
 64
 00:03:50.210 --> 00:03:52.180

@@ -2,7 +2,7 @@
 >> Kyle Simpson: Doug Crockford famously said, iif a feature is sometimes useful and sometimes dangerous, and if there's a better option, then always use the better option. As a matter of fact almost all of the good parts stems from this one foundational perspective. I respect what Doug has done for our industry, but I couldn't disagree more with this prospective.
 
 [00:00:25]
-Partially I disagree with this because we throw this principle around, and we don't even say what we mean by these words. So what is useful in what is dangerous, only what dog thinks is useful dangerous? Is there some universal definition for useful dangerous? How about better option? How do we define better option?
+Partially I disagree with this because we throw this principle around, and we don't even say what we mean by these words. So what is useful in what is dangerous, only what Doug thinks is useful dangerous? Is there some universal definition for useful dangerous? How about better option? How do we define better option?
 
 [00:00:47]
 Is there some universal standard by which we measure better? The statement is not useful in its abstract sense. It's used in its abstract sense, but it's not useful. So, let me put my mark in the sand and tell you what I mean by those words, okay? Number one, useful is when the reader is focused on what's important, and dangerous is when the reader can't tell what's gonna happen.

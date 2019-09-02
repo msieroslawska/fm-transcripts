@@ -106,7 +106,7 @@ then we end up with line 5,
 
 23
 00:01:23.432 --> 00:01:26.920
-42 == "42", right?
+42 double equals to string 42, right?
 
 24
 00:01:26.920 --> 00:01:30.050
@@ -350,8 +350,8 @@ There are historical reasons for
 
 75
 00:04:12.174 --> 00:04:16.058
-why it allowed even the two
-primitives in a comparison.
+why it allowed even the
+twoPrimitives in a comparison.
 
 76
 00:04:16.058 --> 00:04:19.866
@@ -360,7 +360,7 @@ of done all the other coercions but
 
 77
 00:04:19.866 --> 00:04:23.437
-not included the two primitives,
+not included the toPrimitives,
 because in my opinion the only kind of
 
 78

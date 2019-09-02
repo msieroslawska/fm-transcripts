@@ -78,7 +78,7 @@ therefore, it's true.
 17
 00:00:49.260 --> 00:00:53.109
 That's a perfectly rational
-implicit to Boolean coercion.
+implicit toBoolean coercion.
 
 18
 00:00:55.198 --> 00:00:58.347
@@ -159,7 +159,7 @@ need to do a double equals with true or
 34
 00:01:56.860 --> 00:02:03.430
 double equals with false when you could
-just do the to Boolean implicitly.
+just do the toBoolean implicitly.
 
 35
 00:02:03.430 --> 00:02:05.940
@@ -187,7 +187,7 @@ We start with the top one.
 40
 00:02:28.350 --> 00:02:32.220
 Of course if workshop students,
-we just do a to Boolean on it.
+we just do a toBoolean on it.
 
 41
 00:02:32.220 --> 00:02:35.130
@@ -197,7 +197,7 @@ the Boolean on it, and
 42
 00:02:35.130 --> 00:02:38.990
 if it matches great, in this case it does,
-so we run that core branch.
+so we run that code branch.
 
 43
 00:02:40.210 --> 00:02:43.430
@@ -239,12 +239,12 @@ we do the exact same thing.
 
 51
 00:03:11.210 --> 00:03:13.990
-We start off with workshop
-students = false.
+We start off with workshopStudents
+equals false.
 
 52
 00:03:13.990 --> 00:03:18.750
-We get to a string = false,
+We get to a string equals false,
 which becomes a 0 compared to a 0, and
 
 53
@@ -264,7 +264,7 @@ or
 56
 00:03:31.550 --> 00:03:35.760
 double equals to false,
-allow the to Boolean to happen implicitly.
+allow the toBoolean to happen implicitly.
 
 57
 00:03:35.760 --> 00:03:36.950
@@ -288,12 +288,12 @@ question, too generic, but in other cases
 61
 00:03:50.885 --> 00:03:55.526
 where you would go a step further and
-rather than running if workshop students.
+rather than running if workshopStudents.
 
 62
 00:03:55.526 --> 00:03:59.005
 You would check if and
-then method all workshop students,
+then method on workshopStudents,
 
 63
 00:03:59.005 --> 00:04:02.768
@@ -350,7 +350,7 @@ maybe a string.
 74
 00:04:33.210 --> 00:04:38.088
 Then we would wanna do some sort of
-deeper checking than just the to Boolean
+deeper checking than just the toBoolean
 
 75
 00:04:38.088 --> 00:04:38.750

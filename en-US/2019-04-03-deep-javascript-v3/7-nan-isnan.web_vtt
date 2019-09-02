@@ -467,7 +467,7 @@ the Number.isNan utility.
 
 99
 00:06:19.221 --> 00:06:24.945
-And that Number.isNan tells us defiantly
+And that Number.isNan tells us definitely
 for sure it's the NaN value or it's not.
 
 100
@@ -594,7 +594,7 @@ we could return back, ugh, -1.
 126
 00:08:02.214 --> 00:08:07.028
 This is old, historical,
-when you do something like index of, and
+when you do something like indexOf, and
 
 127
 00:08:07.028 --> 00:08:10.583

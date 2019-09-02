@@ -368,23 +368,23 @@ different values types, okay?
 
 79
 00:04:04.325 --> 00:04:08.645
-There is also add it recently
-a few years back in years six,
+There is also added recently
+a few years back in ES6,
 
 80
 00:04:08.645 --> 00:04:12.755
-a lesser none type but the primitives
-of types on the less call simple,
+a lesser known type but the primitive
+type nonetheless called symbol,
 
 81
 00:04:12.755 --> 00:04:15.465
-symbols don't get use to
-often a lot of white for
+symbols don't get used
+an awful lot in widespread
 
 82
 00:04:15.465 --> 00:04:20.340
-JavaScript that use basically you
-create suto private keys on objects.
+JavaScript, they're used basically
+to create pseudo private keys on objects.
 
 83
 00:04:20.340 --> 00:04:22.270
@@ -454,7 +454,7 @@ so why is it over here?
 97
 00:05:02.340 --> 00:05:05.440
 Well it's because,
-it's a little bit corcky.
+it's a little bit quirky.
 
 98
 00:05:05.440 --> 00:05:07.487
@@ -551,7 +551,7 @@ with this numeric indexing.
 118
 00:06:06.060 --> 00:06:09.759
 A special kinda object that has this
-magical length property gather thing on
+magical length property getter thing on
 
 119
 00:06:09.759 --> 00:06:10.880
@@ -608,7 +608,7 @@ at least I hope soon.
 130
 00:06:43.820 --> 00:06:47.690
 And that's finally the JavaScript
-getting big and support, bigint support,
+getting bigint support, bigint support,
 
 131
 00:06:47.690 --> 00:06:49.660
@@ -641,7 +641,7 @@ environments including node,
 
 137
 00:07:05.986 --> 00:07:07.372
-you have big and support.
+you have bigint support.
 
 138
 00:07:08.469 --> 00:07:11.696
@@ -707,7 +707,7 @@ they are definitely not objects.
 
 151
 00:07:55.390 --> 00:08:00.220
-Unlike languages like C plus plus and
+Unlike languages like C++ and
 Java, in JavaScript and
 
 152

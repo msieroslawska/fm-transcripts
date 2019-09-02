@@ -50,7 +50,7 @@ Since the types are matched, they're gonna do exactly the same thing, okay. So i
 Okay, so first off we said if, and let me just point out, I forgot to point out, our object.is is already handling this part for us, so that clause is already handled. So now all we need is the strings coercing to numbers and numbers coercing to strings. But we need to remove those corner cases that we don't want to allow to occur.
 
 [00:06:19]
-So if we wanna allow strings, so a match could be a string as long as it isn't an empty string or a white space only string. So let's code that up. We have an else if (typeof match == "string" && match.trim() !) Is not equal to the empty string.
+So if we wanna allow strings, so a match could be a string as long as it isn't an empty string or a white space only string. So let's code that up. We have an else if typeof match is a string and match.trim is not equal to the empty string.
 
 [00:06:45]
 That handles both the empty string and any white space only strings. So we know matches a non white space, non empty string. And we wanna allow a coercion here but only if v is a number, so we need that clause. And type of v is a number. But this won't fully satisfy our condition, because you'll remember that this one only catches it in terms of the if else if clause logic.
@@ -70,7 +70,7 @@ Same as we did before.
 >> Kyle Simpson: Okay, and then the final clause is the other way around, if match is a number and there's a several numbers that we don't want to allow in there. So we're gonna have to say if it's a number but it's not one of these numbers.
 
 [00:08:56]
-Then we want to allow that coercion from string to number. All right, so if typeof match == "Number", and then let's just refresh. What are the values that we didn't want to pay attention to there? They are NaN and the two infinities. So I'm gonna write this, actually I'll go ahead and break this onto different lines here, a little more readable for you.
+Then we want to allow that coercion from string to number. All right, so if typeof match equals number, and then let's just refresh. What are the values that we didn't want to pay attention to there? They are NaN and the two infinities. So I'm gonna write this, actually I'll go ahead and break this onto different lines here, a little more readable for you.
 
 [00:09:36]
 All right, so we don't wanna consider any case where match is NaN,

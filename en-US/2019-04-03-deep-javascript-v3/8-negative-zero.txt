@@ -1,5 +1,5 @@
 [00:00:00]
->> Kyle Simpson: Let's talk about another special value. This one seems rather strange because what on Earth is a negative zero? If you ask a mathematician, they'll say that's made up, that doesn't exist, that's not a real thing. It definitely exists in programming, it definitely exists in IEEE 754. Just like nan exists in IEEE 754, but a mathematician doesn't know what nan means.
+>> Kyle Simpson: Let's talk about another special value. This one seems rather strange because what on Earth is a negative zero? If you ask a mathematician, they'll say that's made up, that doesn't exist, that's not a real thing. It definitely exists in programming, it definitely exists in IEEE 754. Just like NaN exists in IEEE 754, but a mathematician doesn't know what NaN means.
 
 [00:00:25]
 Then it definitely also requires, IEEE 54 if you will, requires there to be a negative zero. So, what does that mean? Well, it's essentially the zero value, but with the sign bit on. So it is the negative representation of a zero. Now, early days of JavaScript felt that JavaScript developers would never want a negative zero.
@@ -24,13 +24,13 @@ So, the less than and the less than or equal and the greater, I'm sorry, the les
 >> Kyle Simpson: They all lie. So for a long time we didn't really have a built in way of determining if we had a -0, you could get -0s, but you couldn't determine that you had one.
 
 [00:02:46]
-Until ES6 they added a utility called object.is, object.is, I like to refer to this as like the quadruple equals. People like to joke about how double equals, it allows all these different coercions and stuff we'll get into a course of a quality in bit. They like to joke about double equals is changing and triple equals is exact, it's strict except for a couple of lies.
+Until ES6 they added a utility called object.is, object.is, I like to refer to this as like the quadruple equals. People like to joke about how double equals, it allows all these different coercions and stuff we'll get into coercive equality in bit. They like to joke about double equals is changing and triple equals is exact, it's strict except for a couple of lies.
 
 [00:03:11]
 Well, if we don't want those lies let's just add another equals on, so it's like the fourth equals here. It doesn't lie at all, if it's a -0, if it's true and otherwise, it doesn't. And if it's a zero, it gives you true or otherwise, I mean, false or otherwise it doesn't.
 
 [00:03:26]
-So that's your only option, if you wanna test for the zero. Actually, there's technically a mathematical operation and that's a hint for later. There is a mathematical operation that you can use to determine -0. But for the most part, the best way to do this is to use this built-in checker and by the way, object.is can be used to check names.
+So that's your only option, if you wanna test for the zero. Actually, there's technically a mathematical operation and that's a hint for later. There is a mathematical operation that you can use to determine -0. But for the most part, the best way to do this is to use this built-in checker and by the way, object.is can be used to check NaNs.
 
 [00:03:47]
 Although I would say number.is is a more semantic tool for it, but you can also use object.is. So now you're asking yourself, okay great, there's this weird nuanced thing that no one cares about, right? Who would even care about a negative zero? Well, I think they are legitimate purposes, I have actually use negative zeros in my programs before.
@@ -48,7 +48,7 @@ How do I determine what one number, what direction it was, if at zero, we lose t
 And that should have been able to tell us if we had a negative zero. Unfortunately, that went and did something super dumb which was that they made math.sign return negative zero and zero instead of negative one and one. So you can't really use Math.sign to determine this. But if you wanted to make your own, here I'm making my own by basically fixing up the sign method.
 
 [00:05:37]
-And I'm checking if, on one of the two 0s, that's what happens on line 8. And on one of the two 0s, if I'm not one of the two 0srather than I can use the sign. If I'm one of the two zeros, I need to use object.is to figure out if I'm a -0.
+And I'm checking if, on one of the two 0s, that's what happens on line 8. And on one of the two 0s, if I'm not one of the two 0s rather than I can use the sign. If I'm one of the two zeros, I need to use object.is to figure out if I'm a -0.
 
 [00:05:54]
 So that fixed up sign method, you'll notice down there in line 13, it returns a -1 when there's a -0. So yet another way that it might be useful for us to have a sign method that actually works, and here's a way that we can make a sign method that works in a useful way.
@@ -57,7 +57,7 @@ So that fixed up sign method, you'll notice down there in line 13, it returns a 
 There's some reason for the -0 thing in their return value, but I don't think it's very useful. Okay, so the trend example as I said. The trend example, if I wanted to keep track of what direction something was moving. Like if this was a stock or something like that and I wanted to keep track of, even if it's at zero has it been falling or has it been going up?
 
 [00:06:34]
-And I wanna show whether it's been falling or rising in it's stock price for example. Where here you notice that even if I track a negative zero I can show that it's been falling at that point. As opposed to being rising when it gets at the zero value.
+And I wanna show whether it's been falling or rising in its stock price for example. Where here you notice that even if I track a negative zero I can show that it's been falling at that point. As opposed to being rising when it gets at the zero value.
 
 [00:06:50]
 So, negative zeros even though they seem like they may be a little bit nuanced, they're a value that exist in the language so, you should know about them and know how to test for them. And now that you know that they exist, you might even be able to find uses for them.

@@ -26,8 +26,8 @@ it definitely exists in IEEE 754.
 
 6
 00:00:19.980 --> 00:00:24.760
-Just like nan exists in IEEE 754, but a
-mathematician doesn't know what nan means.
+Just like NaN exists in IEEE 754, but a
+mathematician doesn't know what NaN means.
 
 7
 00:00:25.880 --> 00:00:30.170
@@ -228,7 +228,7 @@ equals, it allows all these different
 48
 00:03:00.336 --> 00:03:03.850
 coercions and stuff we'll get into
-a course of a quality in bit.
+coersive equality in bit.
 
 49
 00:03:03.850 --> 00:03:07.070
@@ -290,7 +290,7 @@ this is to use this built-in checker and
 61
 00:03:43.450 --> 00:03:47.230
 by the way,
-object.is can be used to check names.
+object.is can be used to check NaNs.
 
 62
 00:03:47.230 --> 00:03:50.660
@@ -453,7 +453,7 @@ And on one of the two 0s,
 95
 00:05:46.595 --> 00:05:50.340
 if I'm not one of the two
-0srather than I can use the sign.
+0s rather than I can use the sign.
 
 96
 00:05:50.340 --> 00:05:54.902
@@ -514,7 +514,7 @@ falling or has it been going up?
 108
 00:06:34.620 --> 00:06:40.150
 And I wanna show whether it's been falling
-or rising in it's stock price for example.
+or rising in its stock price for example.
 
 109
 00:06:40.150 --> 00:06:44.150

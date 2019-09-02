@@ -51,7 +51,7 @@ the most under valued and
 
 11
 00:00:37.110 --> 00:00:41.100
-under looked that things
+under looked at things
 in all of JavaScript.
 
 12
@@ -109,7 +109,7 @@ favorite features.
 23
 00:01:16.190 --> 00:01:19.050
 I use it all the time,
-especially in my colsole.log statements.
+especially in my console.log statements.
 
 24
 00:01:19.050 --> 00:01:21.720
@@ -132,7 +132,7 @@ Guess, what's happening there?
 
 28
 00:01:32.755 --> 00:01:37.774
-That number is getting coers to a string,
+That number is getting coerced to a string,
 implicitly, evil,
 
 29
@@ -236,17 +236,17 @@ happen to the other one?
 
 49
 00:02:53.800 --> 00:02:57.220
-A two-string operation right there on 7.a.
+A toString operation right there on 7.a.
 
 50
 00:02:57.220 --> 00:03:00.400
-It's gonna call a two string
+It's gonna call a toString
 abstract operation on it, and
 
 51
 00:03:00.400 --> 00:03:03.860
-turn it in to a string with all of
-the weirdnesses in caveats there of.
+turn it into a string with all of
+the weirdnesses and caveats thereof.
 
 52
 00:03:05.070 --> 00:03:09.930
@@ -312,7 +312,7 @@ and then call dot join on it.
 
 65
 00:03:48.885 --> 00:03:53.099
-And that actually ends up string it even
+And that actually ends up stringifying it even
 though it does no string concatenation at
 
 66
@@ -503,7 +503,7 @@ operation when we expect that turns out
 
 105
 00:06:05.620 --> 00:06:08.100
-that the two number abstract operation,
+that the toNumber abstract operation,
 okay?
 
 106
@@ -512,7 +512,7 @@ Just making sure you're all the way, okay?
 
 107
 00:06:09.798 --> 00:06:13.490
-It invokes the two number operation,
+It invokes the toNumber operation,
 that's all it does.
 
 108
@@ -600,7 +600,7 @@ I use the number function.
 
 125
 00:07:16.140 --> 00:07:20.741
-We don't have a two number, so this is
+We don't have a toNumber, so this is
 basically the most semantic way of telling
 
 126
@@ -643,12 +643,12 @@ is gonna do what?
 
 134
 00:07:52.770 --> 00:07:53.840
-Two number, okay?
+ToNumber, okay?
 
 135
 00:07:53.840 --> 00:07:55.970
-It's gonna invoke that two
-number abstract operation.
+It's gonna invoke that
+toNumber abstract operation.
 
 136
 00:07:57.170 --> 00:08:00.159
@@ -662,7 +662,7 @@ us to call these things out and
 
 138
 00:08:05.520 --> 00:08:08.829
-be a lot more aware of incognito
+be a lot more aware or cognizant
 of it intentionally about.
 
 139
@@ -678,7 +678,7 @@ around with coercion my Boolean, right?
 141
 00:08:20.320 --> 00:08:26.650
 Cuz I never write if statements that
-use non-Booleans in the if class.
+use non-Booleans in the if clause.
 
 142
 00:08:27.750 --> 00:08:31.760
@@ -715,7 +715,7 @@ are more corner cases with boolean,
 
 149
 00:08:51.240 --> 00:08:53.380
-maybe than any other premier of type or
+maybe than any other primitive types or
 
 150
 00:08:53.380 --> 00:08:58.840
@@ -940,7 +940,7 @@ the Boolean tests for undefined and null,
 196
 00:11:45.135 --> 00:11:50.090
 we know that both of
-those are on the list.
+those are on the falsy list.
 
 197
 00:11:50.090 --> 00:11:55.210
@@ -962,13 +962,13 @@ But where possible, I like to do so, and
 
 201
 00:12:01.720 --> 00:12:03.350
-cohesion actually is very helpful for
+coercion actually is very helpful for
 that.
 
 202
 00:12:03.350 --> 00:12:08.380
 But with respect to Boolean since we know
-that they're both forcy, if the test that
+that they're both falsy, if the test that
 
 203
 00:12:08.380 --> 00:12:14.650
@@ -978,7 +978,7 @@ been set or not, which we do often.
 204
 00:12:14.650 --> 00:12:18.020
 Is this thing been set on object or
-is it still onset.
+is it still unset.
 
 205
 00:12:18.020 --> 00:12:21.760
@@ -986,75 +986,80 @@ All right, for me,
 that's a perfectly reasonable
 
 206
-00:12:21.760 --> 00:12:26.480
-in placing Boolean coercion
-that I'm okay with.
+00:12:21.760 --> 00:12:24.760
+implicit Boolean coercion.
+As a matter of fact,
 
 207
+00:12:24.760 --> 00:12:26.480
+it's the only Boolean coercion
+I'm okay with.
+
+208
 00:12:26.480 --> 00:12:30.180
 I don't like to impose the coerce and
 
-208
+209
 00:12:30.180 --> 00:12:32.990
 empty strain the false and
 not empty strain the true.
 
-209
+210
 00:12:32.990 --> 00:12:36.230
 I don't like to impose the coerce
 numbers to true or false but
 
-210
+211
 00:12:36.230 --> 00:12:40.820
 I am perfectly happy with either
 saying it's no or undefined,
 
-211
+212
 00:12:40.820 --> 00:12:44.930
 meaning it's unsaid, and that's falsely or
 it's been set to something like an object.
 
-212
+213
 00:12:44.930 --> 00:12:48.310
 And then it's tricky and
 I use that all the all over the place.
 
-213
+214
 00:12:48.310 --> 00:12:50.940
 So in my particular opinion,
 I think it's okay,
 
-214
+215
 00:12:50.940 --> 00:12:55.460
-to use the implicit to Boolean coercion
+to use the implicit toBoolean coercion
 when we're specifically talking about
 
-215
+216
 00:12:55.460 --> 00:13:00.400
 either an object or
 null undefined that decision making.
 
-216
+217
 00:13:00.400 --> 00:13:03.955
 But the numbers and the strings,
 since they have so many corner cases,
 
-217
+218
 00:13:03.955 --> 00:13:07.349
 I don't think that that implicit
 coercion carries its own weight.
 
-218
+219
 00:13:11.360 --> 00:13:14.712
 &gt;&gt; Kyle Simpson: I'm less trying to be
 prescriptive here about exactly how you
 
-219
+220
 00:13:14.712 --> 00:13:18.970
 should do it, and more trying to
 get you to think like JavaScript.
 
-220
+221
 00:13:18.970 --> 00:13:22.470
 And make your own determinations for
 where do I draw these lines.

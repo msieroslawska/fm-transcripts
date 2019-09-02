@@ -1,5 +1,5 @@
 [00:00:00]
->> Kyle Simpson: So hopefully you feel pretty good about that exercise, hopefully it made sense. Let's dive in and try our hand at defining this object is polyfill. So number one, remember, we want an if statement that checks to see that Object.is has not been defined. Now, I'm gonna go ahead and use this little shorthand here, this Boolean coercion, I'm gonna say that the negate of Object.is.
+>> Kyle Simpson: So hopefully you feel pretty good about that exercise, hopefully it made sense. Let's dive in and try our hand at defining this object.is polyfill. So number one, remember, we want an if statement that checks to see that Object.is has not been defined. Now, I'm gonna go ahead and use this little shorthand here, this Boolean coercion, I'm gonna say that the negate of Object.is.
 
 [00:00:25]
 So if Object.is has been defined, the only way that it ever gets defined is as a function. So it's definitely on the truthy list, and if I negate it, and if it's not there, it's definitely undefined. So to me, this is one of those places where I'm okay with the Boolean coercion because, hey, we're only checking either undefined versus totally present.
@@ -14,7 +14,7 @@ So it's easy to make those mistakes. All right, so we're gonna define one, Objec
 Again, the job of Object.is is essentially the triple equals, but also it needs to not lie in the cases of negative 0 and NaN. So there's a little bit of nuance here, which I happened to already know about, so I'll just jump to it. We wanna go ahead and get an indicator, a true false if you will, of whether x is a negative 0 and whether y is a negative 0.
 
 [00:01:57]
-So I'm gonna call it xNegZero; y negative zero, those are just gonna be variables that I assign to here in a moment. And what I'm gonna assign them is the result of testing a value for its negative zeroness. So I'm gonna define a little helper for myself to figure out if something is a negative 0.
+So I'm gonna call it x negative zero, y negative zero, those are just gonna be variables that I assign to here in a moment. And what I'm gonna assign them is the result of testing a value for its negative zeroness. So I'm gonna define a little helper for myself to figure out if something is a negative 0.
 
 [00:02:19]
 I wonder if any of you were able to come up with a way of doing that without the built in object.is? Anyone?
@@ -80,7 +80,7 @@ So we can simply say, v not equal to itself.
 >> Kyle Simpson: And NaN is the only one that would return true from there. So I'm going to test, if (isItNaN(x) && isItNaN(y)). And if that's the case, we definitely know return true, cuz they're both NaNs, and this is the case where we wanna tell the truth.
 
 [00:07:22]
-And if neither one of those too is the case then really all we need to do is to further the triple equals. So we simply return x === y;.
+And if neither one of those two is the case then really all we need to do is to further the triple equals. So we simply return x === y;.
 >> Kyle Simpson: So let's handle this particular case up here. If one or both of them we're not sure yet, but we know at least one of them is a negative 0.
 
 [00:07:44]

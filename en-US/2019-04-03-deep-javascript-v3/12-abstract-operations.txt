@@ -1,5 +1,5 @@
 [00:00:00]
->> Kyle Simpson: So earlier, we described, and I mentioned a thing called an abstract operation. If you recall, I showed you the two number, and I said that's an abstract operation. So let's talk about what those are, because they are the fundamental building block that makes up how we deal with type conversion.
+>> Kyle Simpson: So earlier, we described, and I mentioned a thing called an abstract operation. If you recall, I showed you the toNumber, and I said that's an abstract operation. So let's talk about what those are, because they are the fundamental building block that makes up how we deal with type conversion.
 
 [00:00:17]
 So you see here in the spec that we have these abstract operations which perform, fundamentally, the task of type conversion. In JavaScript, we refer to type conversion as coercion. Okay? So when you think of conversion and coercion, you should really think of them as interchangeable, at least as far as JavaScript is concerned.

@@ -12,7 +12,7 @@ hopefully it made sense.
 3
 00:00:05.174 --> 00:00:09.898
 Let's dive in and try our hand at
-defining this object is polyfill.
+defining this object.is polyfill.
 
 4
 00:00:09.898 --> 00:00:11.450
@@ -147,7 +147,7 @@ whether y is a negative 0.
 31
 00:01:57.777 --> 00:02:02.065
 So I'm gonna call it
-xNegZero; y negative zero,
+x negative zero, y negative zero,
 
 32
 00:02:02.065 --> 00:02:07.793
@@ -585,7 +585,7 @@ we wanna tell the truth.
 
 126
 00:07:22.661 --> 00:07:26.665
-And if neither one of those too is the
+And if neither one of those two is the
 case then really all we need to do is to
 
 127

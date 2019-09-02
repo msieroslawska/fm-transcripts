@@ -54,7 +54,7 @@ about coercion any other place
 
 12
 00:00:39.573 --> 00:00:42.410
-other than the == verse the ===.
+other than the == versus the ===.
 
 13
 00:00:42.410 --> 00:00:46.390
@@ -72,7 +72,7 @@ called loose equality and
 
 16
 00:00:57.527 --> 00:01:02.780
-=== checks the value in the type so
+=== checks the value and the type so
 called strict equality?
 
 17

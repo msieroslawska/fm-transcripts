@@ -8,11 +8,11 @@ at the ToBoolean abstract operation.
 2
 00:00:02.880 --> 00:00:05.710
 And by the way, these four are what we're
-looking at, two primitive, two string,
+looking at, toPrimitive, toString,
 
 3
 00:00:05.710 --> 00:00:07.160
-two number, and two Boolean.
+toNumber, and toBoolean.
 
 4
 00:00:07.160 --> 00:00:10.580
@@ -146,7 +146,7 @@ Let's see if you're paying attention.
 32
 00:01:46.610 --> 00:01:52.940
 What would happen if you try
-to two Boolean an empty array?
+to toBoolean an empty array?
 
 33
 00:01:52.940 --> 00:01:55.260
@@ -159,18 +159,17 @@ how I describe to ToBoolean,
 
 35
 00:01:58.970 --> 00:02:02.600
-it does not invoke the two
-primitive algorithm.
+it does not invoke the toPrimitive algorithm.
 
 36
 00:02:02.600 --> 00:02:07.990
-Or the two number, or the to string,
+Or the toNumber, or the toString,
 or anything, it just does a look up.
 
 37
 00:02:09.210 --> 00:02:12.729
 So is the empty array
-on the falsy the list?
+on the falsy list?
 
 38
 00:02:12.729 --> 00:02:13.474
@@ -191,7 +190,7 @@ on the falsy the list?
 42
 00:02:16.872 --> 00:02:20.532
 That's a key thing to keep in your
-mind when you're doing to Booleans,
+mind when you're doing toBooleans,
 
 43
 00:02:20.532 --> 00:02:24.690

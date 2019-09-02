@@ -11,7 +11,7 @@ There's no other representation of the absence of values within the string type,
 Which would have been NaN. I'm ranting on this particular point because it turns out, we're gonna see that's the root of all evil in JavaScript. But most of the rest of these are all very sensible. If you had the string 0, it becomes 0. If you had the string -0, here's a surprise, it actually becomes -0, very cool.
 
 [00:01:17]
-It strips off any leading white space, trailing whitespace, and leading zeros, so we just get 9. It handles floating points well. Some weirdness with the trailing and leading dots, but those are syntactically valid. It even handles other's bases, like in this case, hexadecimal. So the numerification, I don't know what that word should be, of a string value is fairly sensible, with a couple of weird corner cases.
+It strips off any leading white space, trailing whitespace, and leading zeros, so we just get 9. It handles floating points well. Some weirdness with the trailing and leading dots, but those are syntactically valid. It even handles other bases, like in this case, hexadecimal. So the numerification, I don't know what that word should be, of a string value is fairly sensible, with a couple of weird corner cases.
 
 [00:01:45]
 What about dealing with the numerification of falses or trues, or nulls or undefined? What about those other primitives? Well, false becomes 0, true becomes 1. And at the outset, you might think, well, that makes complete sense. Historically, we've always thought of false as being 0 and true as being 1, from bit-wise perspective.

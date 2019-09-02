@@ -2,7 +2,7 @@
 >> Kyle Simpson: With those as our foundation, those abstract operations as our foundation it is now time for us to switch gears and really topic of coercion. And by the way as I said at the out set, this is going to require for you to get anything out of what I'm about to say over this next bit it's gonna require you to have an open mind.
 
 [00:00:20]
-Because you have been so programmed to believe that this is an evil buggy horrible part of JavaScript that you should avoid, that it's hard to see any value or merit out of this discussion. But I make it such a point of put it in the very top of this course because I think it's one of the most under valued and under looked that things in all of JavaScript.
+Because you have been so programmed to believe that this is an evil buggy horrible part of JavaScript that you should avoid, that it's hard to see any value or merit out of this discussion. But I make it such a point of put it in the very top of this course because I think it's one of the most under valued and under looked at things in all of JavaScript.
 
 [00:00:41]
 So to start off with I know most of you follow that behavior and that advice that says, no I just avoid coercions. I just use the triple equals, I don't deal with types, not so much. Let's look at some examples where you're already doing coercion whether you realize it or not.
@@ -11,10 +11,10 @@ So to start off with I know most of you follow that behavior and that advice tha
 Any of you use the ES6 as of a few years ago, the template-literal strings? Yeah. I certainly use these all over the place. This is one of those slow burns. Cuz when it first came out, I didn't really care about this feature, and now I love this feature.
 
 [00:01:14]
-Might be on my top three favorite features. I use it all the time, especially in my colsole.log statements. I just use it everywhere and I love template strings. And if you drop in values into those expressions, that aren't already strings, probably, like all of you. Guess, what's happening there?
+Might be on my top three favorite features. I use it all the time, especially in my console.log statements. I just use it everywhere and I love template strings. And if you drop in values into those expressions, that aren't already strings, probably, like all of you. Guess, what's happening there?
 
 [00:01:32]
-That number is getting coers to a string, implicitly, evil, you're already doing coercion, all of you, period. No matter what Doug Crawford said, you're doing coercion, you're relying upon coercion in your programs. And that's not a bad thing, that's a perfectly great thing. But under the covers, you should have the mental model that what's happening here is I'm taking a string, msg1, and adding it to a number.
+That number is getting coerced to a string, implicitly, evil, you're already doing coercion, all of you, period. No matter what Doug Crawford said, you're doing coercion, you're relying upon coercion in your programs. And that's not a bad thing, that's a perfectly great thing. But under the covers, you should have the mental model that what's happening here is I'm taking a string, msg1, and adding it to a number.
 
 [00:02:01]
 
@@ -25,7 +25,7 @@ Add an empty string to a thing to turn it into a number. Did you ever stop to wo
 
 [00:02:48]
 
->> Kyle Simpson: Which means, if only one of them is a string, guess what's gonna happen to the other one? A two-string operation right there on 7.a. It's gonna call a two string abstract operation on it, and turn it in to a string with all of the weirdnesses in caveats there of.
+>> Kyle Simpson: Which means, if only one of them is a string, guess what's gonna happen to the other one? A toString operation right there on 7.a. It's gonna call a toString abstract operation on it, and turn it into a string with all of the weirdnesses and caveats thereof.
 
 [00:03:05]
 When it's a well formed number, like the number 16, not such a big deal. But there's lots of corner cases on numbers, and lots of corner cases on other values, and you're just invoking these things happily, and not worrying at all, about the fact that you're using coercion.
@@ -34,7 +34,7 @@ When it's a well formed number, like the number 16, not such a big deal. But the
 No, I'm not here to tell you to stop using coercion, I'm here to tell you you're using coercion, so wouldn't it make sense for you to learn it? That's why we dive into this, okay? So, you may say, well, listen, I don't like to do those implicit coercions, I wanna be super explicit about it.
 
 [00:03:35]
-Okay, so, here's some crazy ways that you can be explicit about it, I just learned this one the other day. I never even considered that you could throw a value into an array, just the one value into an array, and then call dot join on it. And that actually ends up string it even though it does no string concatenation at all, the spec for that join first turns it into a string.
+Okay, so, here's some crazy ways that you can be explicit about it, I just learned this one the other day. I never even considered that you could throw a value into an array, just the one value into an array, and then call dot join on it. And that actually ends up stringifying it even though it does no string concatenation at all, the spec for that join first turns it into a string.
 
 [00:03:57]
 Don't do this that's a terrible idea, but you could if you wanna be super explicit about, you could say listen, I'm only doing string concatenations here. So I'm gonna be explicit about turning my number into a string. Here's some other ones that are maybe a little more well formed.
@@ -55,10 +55,10 @@ All right, all right, all right, so string to, number to string all right, but w
 Which means you're grabbing things as strings, and then you're just doing numeric stuff with them. When you throw that string value at the plus operation, like I'm doing here, guess what happens? Oops, we get a string concatenation. Instead of getting 17, we get the string 161. But okay, okay, I'll go ahead and force it to be a number.
 
 [00:05:53]
-Okay, there's two ways of forcing it to be a number one, this plus operator here. The unary plus operator, if you'll look in the spec for it. Guess what it invokes which abstract operation when we expect that turns out that the two number abstract operation, okay? Just making sure you're all the way, okay?
+Okay, there's two ways of forcing it to be a number one, this plus operator here. The unary plus operator, if you'll look in the spec for it. Guess what it invokes which abstract operation when we expect that turns out that the toNumber abstract operation, okay? Just making sure you're all the way, okay?
 
 [00:06:09]
-It invokes the two number operation, that's all it does. So here we're saying take that thing that's a string or whatever it is, and turn it into a number before we pass it in. If it's a well-formed numeric representation in string form, for example, you're gonna end up with good results here, like 17.
+It invokes the toNumber operation, that's all it does. So here we're saying take that thing that's a string or whatever it is, and turn it into a number before we pass it in. If it's a well-formed numeric representation in string form, for example, you're gonna end up with good results here, like 17.
 
 [00:06:28]
 If it's empty, guess what you're gonna end up with?
@@ -68,22 +68,22 @@ If it's empty, guess what you're gonna end up with?
 I'm good it's this, this is where bugs come from. Using tools that you don't understand how they work. Okay, so let me be more specific about it, even in the plus operator, cuz it might look a little weird. You can use the fundamental number function, okay. This is my preferred way.
 
 [00:07:12]
-If I'm gonna turn something into a number, I use the number function. We don't have a two number, so this is basically the most semantic way of telling the reader of code that you're gonna make a number out of something.
+If I'm gonna turn something into a number, I use the number function. We don't have a toNumber, so this is basically the most semantic way of telling the reader of code that you're gonna make a number out of something.
 >> Kyle Simpson: If you use a minus operator for example, if any of you get too sarcastic with me I'm gonna kick you up.
 
 [00:07:34]
 If you use the minus operator that one is only defined for numbers. That it's not overloaded for string, it wouldn't make any sense to subtract one string from another. So that minus operator up there, is gonna do what?
->> Kyle Simpson: Come on? Two number, okay? It's gonna invoke that two number abstract operation.
+>> Kyle Simpson: Come on? ToNumber, okay? It's gonna invoke that toNumber abstract operation.
 
 [00:07:57]
-These are all things that are happening in your programs in various different ways. And I think it would be a good idea for us to call these things out and be a lot more aware of incognito of it intentionally about.
+These are all things that are happening in your programs in various different ways. And I think it would be a good idea for us to call these things out and be a lot more aware or cognizant of it intentionally about.
 >> Kyle Simpson: Okay, okay, okay, strings and numbers are always work things but you know what I never do, because I never mess around with coercion my Boolean, right?
 
 [00:08:20]
-Cuz I never write if statements that use non-Booleans in the if class. Any of you use like checking to see if a string is non-empty to see whether it's truthy or not? Extremely common practice, guess what that's called coercion. Okay, and guess what? All of the weird corner cases of coercion Booleans are in a fact, even with your little simple if statements they're in a fact.
+Cuz I never write if statements that use non-Booleans in the if clause. Any of you use like checking to see if a string is non-empty to see whether it's truthy or not? Extremely common practice, guess what that's called coercion. Okay, and guess what? All of the weird corner cases of coercion Booleans are in a fact, even with your little simple if statements they're in a fact.
 
 [00:08:48]
-Matter of fact, I would say there are more corner cases with boolean, maybe than any other premier of type or kinds of wearnesses that we're gonna get into here as we go So that empty string, if students input that value as an empty that's gonna be falsy, alright?
+Matter of fact, I would say there are more corner cases with boolean, maybe than any other primitive types or kinds of wearnesses that we're gonna get into here as we go So that empty string, if students input that value as an empty that's gonna be falsy, alright?
 
 [00:09:06]
 But what if that string has just a bunch of white space in it? Now it's gonna be truthy, right? It's not a valid string that you care about because it's got a bunch of white space in it but all of a sudden it's going to be truthy. Corner cases even with our Boolean.
@@ -113,16 +113,16 @@ What does that even mean? So don't be clever just to save a couple of characters
 
 [00:11:32]
 The Boolean of a non-empty string is true, and that's certainly gonna be a gotcha.
->> Kyle Simpson: Okay, the Boolean tests for undefined and null, we know that both of those are on the list. I like to treat null and undefined as indistinguishable values. Wherever possible. It's not always possible to treat them as indistinguishable.
+>> Kyle Simpson: Okay, the Boolean tests for undefined and null, we know that both of those are on the falsy list. I like to treat null and undefined as indistinguishable values. Wherever possible. It's not always possible to treat them as indistinguishable.
 
 [00:11:58]
-But where possible, I like to do so, and cohesion actually is very helpful for that. But with respect to Boolean since we know that they're both forcy, if the test that we're asking for is has this thing been set or not, which we do often. Is this thing been set on object or is it still onset.
+But where possible, I like to do so, and coercion actually is very helpful for that. But with respect to Boolean since we know that they're both falsy, if the test that we're asking for is has this thing been set or not, which we do often. Is this thing been set on object or is it still unset.
 
 [00:12:18]
-All right, for me, that's a perfectly reasonable in placing Boolean coercion that I'm okay with. I don't like to impose the coerce and empty strain the false and not empty strain the true. I don't like to impose the coerce numbers to true or false but I am perfectly happy with either saying it's no or undefined, meaning it's unsaid, and that's falsely or it's been set to something like an object.
+All right, for me, that's a perfectly reasonable implicit Boolean coercion. As a matter of fact, it's the only Boolean coercion I'm okay with. I don't like to impose the coerce and empty string to false and not empty string to true. I don't like to implicitly coerce numbers to true or false but I am perfectly happy with either saying it's null or undefined, meaning it's unset, and that's falsy or it's been set to something like an object and it's truthy.
 
 [00:12:44]
-And then it's tricky and I use that all the all over the place. So in my particular opinion, I think it's okay, to use the implicit to Boolean coercion when we're specifically talking about either an object or null undefined that decision making. But the numbers and the strings, since they have so many corner cases, I don't think that that implicit coercion carries its own weight.
+And then it's tricky and I use that all the all over the place. So in my particular opinion, I think it's okay, to use the implicit toBoolean coercion when we're specifically talking about either an object or null undefined that decision making. But the numbers and the strings, since they have so many corner cases, I don't think that that implicit coercion carries its own weight.
 
 [00:13:11]
 

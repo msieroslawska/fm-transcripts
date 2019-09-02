@@ -282,7 +282,7 @@ what on earth is that?
 61
 00:03:22.970 --> 00:03:28.230
 The default toString on
-the object of prototype is to
+the object.Prototype is to
 
 62
 00:03:28.230 --> 00:03:29.900

@@ -39,7 +39,7 @@ Or just because there something called boxing, where something can behave as an 
 That's what we mean by a type. The set of intrinsic characteristics, that we expect to be able to do with that value. So if we expect something different from numbers we can an arithmetic, then what we can do with strings like accessing characters, those are different values I mean different values types, okay?
 
 [00:04:04]
-There is also add it recently a few years back in years six, a lesser none type but the primitives of types on the less call simple, symbols don't get use to often a lot of white for JavaScript that use basically you create suto private keys on objects. Not really private, but kinda obscure.
+There is also added recently a few years back in ES6, a lesser known type but the primitive type nonetheless called symbol, symbols don't get used an awful lot in widespread JavaScript, they're used basically to create pseudo private keys on objects. Not really private, but kinda obscure.
 
 [00:04:23]
 So you don't see those used a lot, more probably used in frameworks than you're gonna see in your general JavaScript code, but it is a primitive type nonetheless. And then we have some other types, or other things that may behave like types that we should ask about. For example, what happens or how are we dealing with things that have never been declared?
@@ -50,7 +50,7 @@ So you don't see those used a lot, more probably used in frameworks than you're 
 
 [00:04:55]
 
->> Kyle Simpson: What about null, I didn't put that in the list and JavaScript calls that a type. But it's not in the list, so why is it over here? Well it's because, it's a little bit corcky.
+>> Kyle Simpson: What about null, I didn't put that in the list and JavaScript calls that a type. But it's not in the list, so why is it over here? Well it's because, it's a little bit quirky.
 >> Kyle Simpson: And this is just straight up, a historical bug and we'll see in just a moment.
 
 [00:05:09]
@@ -64,17 +64,17 @@ JavaScript refers to functions essentially as a subtype of the object type. In f
 They're numerically indexed, and they have a length property that automatically updates. And they have various methods to them. So, are they a type? Again, the best way to think about them, the best mental model I've come up with is that it's a subtype of the object type. It's a special kinda object with this numeric indexing.
 
 [00:06:06]
-A special kinda object that has this magical length property gather thing on it, okay? So it's not really a top level type, but it's certainly a kinda value that has a certain kinda behavior, and it's useful for us to be able to distinguish. If we need to do something with an array, and we have this value we don't know if it's array, we need to determine is it an array?
+A special kinda object that has this magical length property getter thing on it, okay? So it's not really a top level type, but it's certainly a kinda value that has a certain kinda behavior, and it's useful for us to be able to distinguish. If we need to do something with an array, and we have this value we don't know if it's array, we need to determine is it an array?
 
 [00:06:26]
 
 >> Kyle Simpson: Speaking of determining, how are we gonna determine all of this things? And I'm gonna throw in, a little of forward thinking stuff. Because at the moment, this isn't actually in the spec. But it's like, stage three and probably gonna land in the spec, at least I hope soon.
 
 [00:06:43]
-And that's finally the JavaScript getting big and support, bigint support, large integer support. And when it does come to JavaScript, almost certainly when it lands in the language, it's gonna be another primitive type. So it's on this list only because, it's not actually here but it's actually already implemented for example in V8.
+And that's finally the JavaScript getting bigint support, bigint support, large integer support. And when it does come to JavaScript, almost certainly when it lands in the language, it's gonna be another primitive type. So it's on this list only because, it's not actually here but it's actually already implemented for example in V8.
 
 [00:07:02]
-So in all of your Chrome based environments including node, you have big and support.
+So in all of your Chrome based environments including node, you have bigint support.
 >> Kyle Simpson: And it's likely gonna land officially, within the language.
 >> Kyle Simpson: There is obviously a caveat that until it's there, it's not there. And things have been, late stage three almost stage four and then been completely deleted.
 
@@ -82,7 +82,7 @@ So in all of your Chrome based environments including node, you have big and sup
 So I can't guarantee, that there will be bigints but it's pretty certain at this point, I'd say at least 95%. So, this are some things that are values that we can expect certain characteristics from, and there's a critical detail that I don't want you to miss here, which is that most of this are not objects, right?
 
 [00:07:42]
-This are objects, all of this not objects. All of this may have or at least many of these may have object like behaviors that you can opt into, but they are definitely not objects. Unlike languages like C plus plus and Java, in JavaScript and in other dynamically typed languages, it is not the variables that have types.
+This are objects, all of this not objects. All of this may have or at least many of these may have object like behaviors that you can opt into, but they are definitely not objects. Unlike languages like C++ and Java, in JavaScript and in other dynamically typed languages, it is not the variables that have types.
 
 [00:08:05]
 It is the values themselves that have types. And that matches with that instinctual definition I just gave types that they assumed or instinctual characteristics we expect from the values. Well, of course. Let's refer to them as value types. That's a better way of distinguishing it than to try to get the types policed to jump all over us and tell us, no this don't qualify as types.

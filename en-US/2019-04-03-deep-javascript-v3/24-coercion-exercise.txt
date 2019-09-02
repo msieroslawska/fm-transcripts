@@ -5,7 +5,7 @@
 So we're going to define two different validator functions. The first one's called isValidName. And it gives the requirements here, needs to take a string that is non-empty, must contain something that's not white space, and has to be at least three characters long, okay? So it has to return true if what you pass in matches that, and otherwise return false.
 
 [00:00:54]
-And again, the spirit of this exercise is, use what we've learned now about coercion to properly handles this. So there's a variety of ways to do it, but try to properly handle that check. Then you're gonna do a slightly more complex validator called hoursAttended. It takes two inputs, we'll call them attended and length.
+And again, the spirit of this exercise is, use what we've learned now about coercion to properly handle this. So there's a variety of ways to do it, but try to properly handle that check. Then you're gonna do a slightly more complex validator called hoursAttended. It takes two inputs, we'll call them attended and length.
 
 [00:01:14]
 It allows either one of these to be a string or a number. So we are gonna allow a bit of coercion here. We're not gonna say it has to always be a number. We'll allow both strings and numbers, but nothing else. So we need to check to make sure, or assume that those are definitely strings and numbers.

@@ -31,7 +31,7 @@ don't have those corner cases and
 
 7
 00:00:20.406 --> 00:00:25.082
-we can't make work videos about C++, for
+we can't make watch videos about C++, for
 example, cuz we definitely can, right?
 
 8
@@ -45,7 +45,7 @@ JavaScript has some corner cases.
 
 10
 00:00:31.208 --> 00:00:34.571
-Rather than making wap videos about them,
+Rather than making WAT videos about them,
 we should learn those corner cases and
 
 11
@@ -71,12 +71,12 @@ could effectively answer.
 15
 00:00:45.475 --> 00:00:49.479
 Because what is even more mean, and
-we're just gonna like keep up account.
+we're just gonna like keep a count.
 
 16
 00:00:49.479 --> 00:00:52.924
 How can you tell whether this is
-the distinct different quark or
+the distinct different quirk or
 
 17
 00:00:52.924 --> 00:00:55.400
@@ -86,7 +86,7 @@ from a different angle?
 18
 00:00:55.400 --> 00:00:57.746
 I'm not sure that you could
-really do that sort of account.
+really do that sort of a count.
 
 19
 00:00:57.746 --> 00:01:00.031
@@ -132,7 +132,7 @@ We'll talk about that more in a second.
 
 28
 00:01:26.442 --> 00:01:29.089
-Knowles and
+Nulls and
 undefined have some weird corner cases.
 
 29
@@ -143,7 +143,7 @@ values becoming numbers,
 30
 00:01:32.091 --> 00:01:34.476
 those there were a lot
-of the corner cases ar.
+of the corner cases are.
 
 31
 00:01:34.476 --> 00:01:38.986
@@ -179,7 +179,7 @@ to behave as if it is truthy, because
 
 38
 00:01:58.809 --> 00:02:03.985
-we don't do a two primitive on it, we
+we don't do a toPrimitive on it, we
 just ask is it on the falsy list or not?
 
 39
@@ -193,7 +193,7 @@ you should never use those particular
 
 41
 00:02:14.388 --> 00:02:16.521
-fundamentals with the Nuki word.
+fundamentals with the new keyword.
 
 42
 00:02:18.489 --> 00:02:21.171
@@ -217,7 +217,7 @@ white space also becomes zero.
 
 46
 00:02:31.046 --> 00:02:35.571
-Because the two number operations
+Because the twoNumber operation
 first strips off all leading and
 
 47
@@ -251,7 +251,7 @@ no, no, that's a terrible idea.
 53
 00:02:57.491 --> 00:03:01.848
 Don't make empty string become zero,
-make it become name.
+make it become NaN.
 
 54
 00:03:01.848 --> 00:03:04.773
@@ -280,7 +280,7 @@ I'll decide on some word at some point.
 
 59
 00:03:24.259 --> 00:03:29.219
-But whatever that word is, to numbering
+But whatever that word is, toNumbering
 a boolean I said to you, 1s and
 
 60
@@ -410,5 +410,5 @@ but basically making worse of code.
 86
 00:05:06.057 --> 00:05:11.920
 I would make the number coercion of
-brilliant be name if I could fix things.
+Booleans be NaN if I could fix things.
 

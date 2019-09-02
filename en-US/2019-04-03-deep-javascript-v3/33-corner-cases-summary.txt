@@ -2,7 +2,7 @@
 >> Kyle Simpson: A takeaway, or a way to summarize, how to avoid these corner cases with the double equals. These are a set of guidelines that I think you can use. You can use double equals, but avoid it in these particular scenarios. Number one, avoid the double equals when either side of them can be a 0, or an empty string, or even one of those strings with only whitespace in it.
 
 [00:00:21]
-Don't use double equals in those cases. There's just a lot of corner cases that you might get bitten by. Some people say well, I can't, no. Okay, but is there anyway for you to restructure your codes so you can? Cuz I think that's better. It's at least a better code, regardless of whether you like double equal or not.
+Don't use double equals in those cases. There's just a lot of corner cases that you might get bitten by. Some people say well, I can't, no. Okay, but is there anyway for you to restructure your code so you can? Cuz I think that's better. It's at least a better code, regardless of whether you like double equal or not.
 
 [00:00:42]
 But let's say you can't. Well, then another check that you should ask or to avoid the double equals,

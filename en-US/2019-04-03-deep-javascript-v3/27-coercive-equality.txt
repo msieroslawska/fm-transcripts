@@ -25,7 +25,7 @@ In other words, the no value and the undefined value are coercively equal to eac
 And so it's only coercive to each other. I find that to be a tremendously useful fact about JavaScript because, quite honestly, I don't like having two empty values. I find that to be confusing. So I would much rather deal with one empty value. And since null is shorter to type than undefined, I'd rather deal with null everywhere.
 
 [00:02:33]
-And pretend as much as possible that undefined doesn't exist. Or at least pretend that they're interchangeable. JavaScript does make some distinctions between them, such as the default value algorithm. But, for the most part, you have the option of treating null and undefined as indistinguishable through coercive equality. So you could do a check like this, you could have a workshop one and a workshop two, and there's a topic property on there.
+And pretend as much as possible that undefined doesn't exist. Or at least pretend that they're interchangeable. JavaScript does make some distinctions between them, such as the default value algorithm. But, for the most part, you have the option of treating null and undefined as indistinguishable through coercive equality. So you could do a check like this, you could have a workshop1 and a workshop2, and there's a topic property on there.
 
 [00:03:00]
 You could be asking of that topic property if it's been set and it's null, or if it's never been set at all, or if it's been set and it's too undefined. You could try to distinguish between those two, but I would argue in almost all cases, that's not a useful distinction.
@@ -46,10 +46,10 @@ It says, whether are null or undefined, tell me if they're empty or not. Tell me
 >> Kyle Simpson: Okay? This is an example of using coercive equality, and even some of the staunchest harshest critics of coercion, you will find them using double equals null checks in their code.
 
 [00:04:40]
-Because it's less controversial than some of the other double equals usages. Most people seem to be okay with that. Even though JFLint says no no, most other people have those linting rules turned on. I use ESLint, it's an amazingly configurable linter. I have a very different rule set than you do, I'm sure, cuz I have very different opinions, but I use an ESLint tool and I turn on what rules help me write better code and that's what linters are for.
+Because it's less controversial than some of the other double equals usages. Most people seem to be okay with that. Even though JSLint says no no, most other people have those linting rules turned on. I use ESLint, it's an amazingly configurable linter. I have a very different rule set than you do, I'm sure, cuz I have very different opinions, but I use an ESLint tool and I turn on what rules help me write better code and that's what linters are for.
 
 [00:05:08]
-Linters are an opinion that helps you decide whether or not your code is formatted in such a way where, or structured in such a way, to avoid bugs or whether it's likely that a problem will occur. It's not checking if your programming is correct. It's giving you an opinion on whether you've done the right thing.
+Linters are an opinion that helps you decide whether or not your code is formatted in such a way where, or structured in such a way, to avoid bugs or whether it's likely that a problem will occur. It's not checking if your program is correct. It's giving you an opinion on whether you've done the right thing.
 
 [00:05:26]
 The thing about opinions is that everybody's got different opinions. So the best tools are the ones that are most configurable, not just to individual opinions, but most effectively for teams. Let a team decide what is effective for them. To any extent that you use a tool that shares an opinion about your code with you, by way of erroring out your build process, to the extent that that tool is unable for you to configure it so that you can get your job done more effectively and it forces you to change the way you code to adapt to it, then that tool is not helping you, it is hampering your development opportunities.

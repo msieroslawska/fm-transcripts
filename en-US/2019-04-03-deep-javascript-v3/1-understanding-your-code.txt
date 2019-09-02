@@ -23,7 +23,7 @@ Like I constructed the X equals X plus one, which is reasonable by the way. I'm 
 Can you imagine an architect of this building saying, I hope the walls stay up, and I hope the roof stays on? Let's put people in it and see how it works. Let's run the tests and see how it works. I don't know of any other way of developing a confidence over your code.
 
 [00:02:39]
-But it's what I'm striving towards, to be able to understand what the code is doing. And right here in this particular spec, it tells us exactly what happens. It grabs the old value and does the two number operation on it. It turns it from whatever it is into a number.
+But it's what I'm striving towards, to be able to understand what the code is doing. And right here in this particular spec, it tells us exactly what happens. It grabs the old value and does the ToNumber operation on it. It turns it from whatever it is into a number.
 
 [00:02:53]
 And we're gonna talk about that two number that's called an abstract operation. We're gonna get into that in this course. But I want you to be able to be comfortable enough that, if you didn't understand something, you could check MDN. But guess what? MDN is not always [LAUGH] right.
@@ -32,7 +32,7 @@ And we're gonna talk about that two number that's called an abstract operation. 
 I fixed problems on MDN on a regular basis. So if there's something that you're seeing that's not matching what you're reading, there's really only one place to go and it's the spec. If I were to try to translate that specification into some kind of JavaScript code that we could maybe better understand, it's basically this, that the ++ is like a function.
 
 [00:03:28]
-It's an operator, but it's like a function that takes the original X. And right there on line 4, it coerces it to a number. And it returns that original number after having updated it with the increment of one. So this is an illustration of having a more clear mental model, and the only way that I got that was reading this back.
+It's an operator, but it's like a function that takes the original X. And right there on line 4, it coerces it to a number. And it returns that original number after having updated it with the increment of one. So this is an illustration of having a more clear mental model, and the only way that I got that was reading the spec.
 
 [00:03:50]
 I saw something that I expected to have happen. It didn't happen, and I noticed that's my lack of understanding, I have the wrong mental model. And there's one way to solve that, read the spec. Whenever there is a divergence between what your brain thinks and what is actually happening in the computer, that's where bugs enter the code.

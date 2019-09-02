@@ -10,7 +10,7 @@ Well, that's another historical wart, JavaScript trying to pretend as if the abs
 [00:01:04]
 And undefined means there's definitely a variable, and at the moment, it has no value.
 >> Kyle Simpson: Very different things.
->> Kyle Simpson: The type of operator is the only operator in existence that is able to reference a thing that doesn't exist and not throw an error.
+>> Kyle Simpson: The typeof operator is the only operator in existence that is able to reference a thing that doesn't exist and not throw an error.
 >> Kyle Simpson: Now, undefined and undeclared, we can fairly straightforwardly sift those out.
 
 [00:01:28]

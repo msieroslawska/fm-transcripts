@@ -26,7 +26,7 @@ That is that each one of these calls all return true, and each one of these call
 You could copy your code into a console and run it inside of a console, like in your Chrome developer tools. However you like to run your JavaScript, doesn't need any other surrounding information. But you're gonna define your Object.is polyfill here at the top, and then make sure that it pass all the tests.
 
 [00:03:20]
-This would probably take someone between five and eight minutes, so we'll break, let you have some chances to work on the exercise, and then we'll come back and talk about the solution. If you get stock and you need a hint, the solution is provided for you and it's ex.fixed.js in that same directory.
+This would probably take someone between five and eight minutes, so we'll break, let you have some chances to work on the exercise, and then we'll come back and talk about the solution. If you get stuck and you need a hint, the solution is provided for you and it's ex.fixed.js in that same directory.
 
 [00:03:38]
 All right, have fun with this exercise.

@@ -5,7 +5,7 @@
 And the same message that I have for all of coercion is going to apply for coercive equality as well. But I wanna dig specifically into some issues about the == versus ===, since this is really the place where most people focus their attention when they talk about coercion.
 
 [00:00:35]
-In fact most people haven't thought about coercion any other place other than the == verse the ===. So there's some further dissection. So how many of you have heard before that the difference between == and === is that == checks the value so called loose equality and === checks the value in the type so called strict equality?
+In fact most people haven't thought about coercion any other place other than the == versus the ===. So there's some further dissection. So how many of you have heard before that the difference between == and === is that == checks the value so called loose equality and === checks the value and the type so called strict equality?
 
 [00:01:02]
 This is extremely common. And unfortunately even though it sounds really good it's not exactly the case. That's not exactly the difference. And it's not just an academic nuance here. The difference really changes our perspective on the utility, the purpose of these two mechanisms in our language. So, I really think that if you're trying to understand your code, it's critical that you learn to think like JavaScript, that's sort of been the thesis going along.

@@ -2,7 +2,7 @@
 >> Kyle Simpson: So wrapping up our whole discussion on types in coercion, we're wrapping up this unit. Let me make some final observations. Number one, it is true, it is a fact that JavaScript has a dynamic type system, it is a type system, it just is dynamic. I've really bristle when people say JavaScript has no types, it definitely does, it's a type system, it's just not Java's type system.
 
 [00:00:24]
-It uses various forms of coercion but they're for value type conversions rather than variable typing. And we also have equality comparisons that can be coerced. The prevailing response to JavaScript's type system is essentially avoid as much of the system as possible and only use the triple to protect yourself so that you don't have to worry about them.
+It uses various forms of coercion but they're for value type conversions rather than variable typing. And we also have equality comparisons that can be coerced. The prevailing response to JavaScript's type system is essentially avoid as much of the system as possible and only use the triple equals to protect yourself so that you don't have to worry about them.
 
 [00:00:51]
 As I've said several times now, I don't think that that is an effective strategy. Part of the problem with avoidance of anything but especially an entire unit of of the language like that, is that it tends to systematically perpetuate bugs. That is to say it's not that one bug will happen or one bug won't happen but the mindset that says, I don't even need to understand this whole part of the language, perpetuates bugs, that's a systematic approach, and I would never recommend a systematic avoidance of any particular thing, that is avoidance of even understanding it.

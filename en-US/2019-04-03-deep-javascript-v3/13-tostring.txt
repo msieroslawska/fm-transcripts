@@ -27,7 +27,7 @@ I mean they're there presently. You can see there's a comma there. They're there
 
 [00:03:17]
 
->> Kyle Simpson: What about on objects? I'm sure you've all seen the bracket object object thing which is like, what on earth is that? The default toString on the object of prototype is to do that whole bracket thing. And this, let me just rant for just a micro moment here, why on earth did they leave off the square brackets for arrays and put the square brackets on objects?
+>> Kyle Simpson: What about on objects? I'm sure you've all seen the bracket object object thing which is like, what on earth is that? The default toString on the object.Prototype is to do that whole bracket thing. And this, let me just rant for just a micro moment here, why on earth did they leave off the square brackets for arrays and put the square brackets on objects?
 
 [00:03:39]
 Somebody explain that to me, what on earth. Bonkers. Okay but back to reality for a moment. It does the square brackets, it does a lower case object and then it puts in this thing which is called the string tag. And it turns out you can actually override the string tag for any of your own custom objects using an ES6 symbol.

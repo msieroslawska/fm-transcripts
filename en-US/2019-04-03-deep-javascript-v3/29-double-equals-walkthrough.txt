@@ -8,7 +8,7 @@ In this particular case, yes, but should it? Ooh, and why is more important, eve
 So let's again, let's invoke that algorithm to see what is actually happening under the covers. To get a sense of what double equals is doing. First, it tries to compare workshop1Count and workshop2Count. That's the ==. It turns workshop1Count into its primitive form, which is its number. But workshop2Count is an array, so what it first does is say toPrimitive.
 
 [00:01:14]
-What happens to the toPrimitive of an array? It stringifies itself, so then we end up with line 5, 42 == "42", right? But that’s only because of that weird array stringification that doesn’t include the brackets. So it’s almost accidentally working here. And only accidentally working because there is only one value in the array.
+What happens to the toPrimitive of an array? It stringifies itself, so then we end up with line 5, 42 double equals to string 42, right? But that’s only because of that weird array stringification that doesn’t include the brackets. So it’s almost accidentally working here. And only accidentally working because there is only one value in the array.
 
 [00:01:39]
 You with me? Now we have two different types, we have a number and a string. There's two options here. We could either make the number into a string and compare the strings, or make the string into a number and compare the numbers. Which one happens in the algorithm?
@@ -40,7 +40,7 @@ What you should do is fix it so that the comparisons that you're making make sen
 Double equals isn't the one that's at fault. And triple equals only covers it up, it doesn't fix the real problem. If you make sensible comparisons, like a string representation of a number to the actual number, that's a sensible comparison and coercion makes complete sense there. But if you compare something to something entirely different and it accidentally works, that's not sensible.
 
 [00:03:54]
-That's not reasonable. I agree with you that the outcome that we see is, why would you do that? But what I don't tend to do is say JavaScript was poorly designed here. There are historical reasons for why it allowed even the two primitives in a comparison. If I were designing the coercion, I would of done all the other coercions but not included the two primitives, because in my opinion the only kind of non-primitive comparison that should ever be possible is the identity comparison.
+That's not reasonable. I agree with you that the outcome that we see is, why would you do that? But what I don't tend to do is say JavaScript was poorly designed here. There are historical reasons for why it allowed even the toPrimitives in a comparison. If I were designing the coercion, I would of done all the other coercions but not included the toPrimitives, because in my opinion the only kind of non-primitive comparison that should ever be possible is the identity comparison.
 
 [00:04:28]
 Coercion with primitives is crazy. But one of the historical reasons for the coercion with primitives is that in the olden days you did newString, and now you have an object. But you don't think of it as being an object, you think of it as being the primitive. So they allowed that non-primitive to coercively down coerce itself to its primitive equivalent.

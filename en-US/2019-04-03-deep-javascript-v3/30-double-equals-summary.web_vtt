@@ -17,7 +17,7 @@ just gonna use triple equals.
 
 4
 00:00:09.100 --> 00:00:14.639
-If either of them both of them are no or
+If either of them both of them are null or
 undefined, they are equal.
 
 5
@@ -33,7 +33,7 @@ become primitive first.
 7
 00:00:20.179 --> 00:00:22.839
 And then once you have
-primitives prefer to number.
+primitives prefer toNumber.
 
 8
 00:00:24.890 --> 00:00:29.144

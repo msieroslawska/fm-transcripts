@@ -63,7 +63,7 @@ Now I'm not making the case that on performance alone that's an argument, becaus
 >> Kyle Simpson: So if you're in this scenario where you could do two === or three or four, or you could do one ==, I say you should prefer the faster of the two which is the single ==, part of the argument, certainly not the entirety of the argument.
 
 [00:07:24]
-And finally, if the types are different, and two or more are what the comparisons, that's what you would use, is two or more of the ===, my claim is that it's distracting the reader with unnecessary type information, like in the null undefined case, for example. And the no one find case, you're distracting the reader there is these two different empty values and they sort of have weird quirky differences.
+And finally, if the types are different, and two or more are what the comparisons, that's what you would use, is two or more of the ===, my claim is that it's distracting the reader with unnecessary type information, like in the null undefined case, for example. And the null undefined case, you're distracting the reader there is these two different empty values and they sort of have weird quirky differences.
 
 [00:07:48]
 That's not necessary for the reader to see in most cases, in most cases you're distracting them by listing explicitly and what you have to use is the more properly abstracted coercion that it's cleaner with the ==. Now remember, this is if you know the types, right, I'm only making these claims if you know the types.

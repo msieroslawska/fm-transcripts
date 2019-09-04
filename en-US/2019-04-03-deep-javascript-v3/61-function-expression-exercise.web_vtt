@@ -205,7 +205,7 @@ the studentRecords array.
 43
 00:02:35.214 --> 00:02:40.409
 Retrieve each record by ID, and there's
-a hint there than you can use array find.
+a hint there than you can use array.find.
 
 44
 00:02:40.409 --> 00:02:44.265
@@ -213,13 +213,13 @@ Sorted by the student name, ascending.
 
 45
 00:02:44.265 --> 00:02:47.459
-You can use array sort, but you're
+You can use array.sort, but you're
 gonna have to use a custom function.
 
 46
 00:02:48.590 --> 00:02:52.730
 And then print each record to the console
-or the console log statement including
+or the console.log statement including
 
 47
 00:02:52.730 --> 00:02:55.110
@@ -232,7 +232,7 @@ That's what that function does.
 
 49
 00:02:57.830 --> 00:03:01.690
-Number two, the paid students to enroll
+Number two, the paidStudentsToEnroll
 function looks through all the student
 
 50

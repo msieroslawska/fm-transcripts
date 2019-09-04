@@ -17,7 +17,7 @@ And that'll be our first pass through the program, is that compilation step. And
 It helps you, it's sort of an old teacher trick, if I get you to say this stuff out loud, it embeds it more in your brain. So as we go along I want you to speak out loud with me, even though it sounds a little bit silly. Remember, in our processing phase, in our compilation phase, we have a scope manager and we have a compiler.
 
 [00:01:43]
-So I'll play the part of compiler talking to a scope manager. And when I come across, as I see here on line 1, when I see on line, a var declaration, whether it's a let or a const, or a var isn't relevant at this moment. But I'm gonna use vars just for the simplicity of illustration.
+So I'll play the part of compiler talking to a scope manager. And when I come across, as I see here on line 1, when I see on line 1, a var declaration, whether it's a let or a const, or a var isn't relevant at this moment. But I'm gonna use vars just for the simplicity of illustration.
 
 [00:02:01]
 That's a formal declaration. In other words, we're creating a marble. And we gotta know what color to make that marble, so we gotta have some scope that we're adding it to. And in this case, obviously it's the global scope, okay? And just for the simplicity of our discussion, I'm gonna use the three primary colors.
@@ -29,7 +29,7 @@ I'm gonna say the outer global scope is gonna be the red bucket and then whereve
 I have a marble here, have you ever heard of this thing called teacher? And I'm asking this question because if it already knows about an identifier of the name teacher, it doesn't need to do anything. That's a no op. There's no such thing as redeclaration. It's just okay, great, you already know about this marble.
 
 [00:03:02]
-But in this particular case, since it's the first time that the compiler would have asked the global scope about a variable called teacher, then the global scope's gonna say, nope, never heard of it. But I've created now a red marble for you and, pop, now we just dropped it into the red bucket.
+But in this particular case, since it's the first time that the compiler would have asked the global scope about a variable called teacher, then the global scope's gonna say, nope, never heard of it. But I've created now a red marble for you and, boop, now we just dropped it into the red bucket.
 
 [00:03:18]
 It hadn't actually been created, that they don't get created for real until execution, but conceptually we're creating this plan from what we see in the program. So yes, global scope says, sure, we'll make a red marble and we'll drop it into the red bucket. Now what we're doing is looking for these formal declarations.

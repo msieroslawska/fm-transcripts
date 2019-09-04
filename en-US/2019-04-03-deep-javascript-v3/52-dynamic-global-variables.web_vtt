@@ -34,11 +34,11 @@ Hey scope of.
 
 8
 00:00:16.380 --> 00:00:16.890
-&gt;&gt; Speaker 2: Other class.
+&gt;&gt; Speaker 2: OtherClass.
 
 9
 00:00:16.890 --> 00:00:17.530
-&gt;&gt; Kyle Simpson: Other class.
+&gt;&gt; Kyle Simpson: OtherClass.
 
 10
 00:00:17.530 --> 00:00:19.900
@@ -123,7 +123,7 @@ as possible for people that didn't
 28
 00:00:56.775 --> 00:01:01.722
 understand the language, they
-instituted this idea of auto global's.
+instituted this idea of auto globals.
 
 29
 00:01:01.722 --> 00:01:07.460
@@ -370,7 +370,7 @@ you wouldn't see this behavior.
 
 80
 00:03:35.430 --> 00:03:38.230
-But since this code snip it isn't,
+But since this code snippet isn't,
 that's what happens,
 
 81

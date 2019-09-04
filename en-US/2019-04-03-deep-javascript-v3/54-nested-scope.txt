@@ -1,5 +1,5 @@
 [00:00:00]
->> Kyle Simpson: Now it start to talk about the idea that scopes can actually be nested inside of each other. So we're gonna even further stretch that bucket metaphor. Now we're talking about the bucket within the side of a bucket within the side of the bucket, it gets really weird.
+>> Kyle Simpson: Now it start to talk about the idea that scopes can actually be nested inside of each other. So we're gonna even further stretch that bucket metaphor. Now we're talking about the bucket within inside of a bucket within inside of the bucket, it gets really weird.
 
 [00:00:11]
 But we're gonna have buckets all the way down, okay? [LAUGH]. So let's process this quickly exactly the same way as we have before, same rules entirely, okay? We start by looking at line one, that's a what kind of marble? Line one is a formal declaration that makes a?
@@ -14,9 +14,9 @@ But we're gonna have buckets all the way down, okay? [LAUGH]. So let's process t
 >> Kyle Simpson: A blue marble, right? Now we're inside of the blue scope.
 
 [00:00:46]
-Line six is a declaration that creates what color module?
+Line six is a declaration that creates what color marble?
 >> Class: Blue.
->> Kyle Simpson: The blue module, cuz ask is in the scope of the other class, right? Function declarations make their identifier in their enclosing scope, that's critical, keep that in mind. All right, so then we're inside of ask and it's made of what color scope?
+>> Kyle Simpson: The blue marble, cuz ask is in the scope of otherClass, right? Function declarations make their identifier in their enclosing scope, that's critical, keep that in mind. All right, so then we're inside of ask and it's made of what color scope?
 
 [00:01:03]
 
@@ -47,7 +47,7 @@ But if we didn't, we would have go on and keep going, so you could go 50 levels 
 >> Kyle Simpson: It is the string, Why?, because on line 10, when we execute line 10.
 
 [00:02:43]
-We have a value there which we might have had to look up, but in this case it's a literal. And what happens to the string line?
+We have a value there which we might have had to look up, but in this case it's a literal. And what happens to the string why?
 >> Class: It gets passed-
 >> Kyle Simpson: It gets assigned to the variable question, so that execution happens at line 10 before ask starts executing.
 
@@ -82,7 +82,7 @@ Once you go to strict mode, they both behave exactly the same, so it stops matte
 >> Kyle Simpson: So we're gonna see a reference here, ReferenceError here on line 14. Yes?
 >> Student: When we're passing the string why to ask on line ten-
 >> Kyle Simpson: Yeah.
->> Student: Is there behind the scenes, is JavaScript saying far question equals why at some point?
+>> Student: Is there behind the scenes, is JavaScript saying var question equals why at some point?
 
 [00:04:39]
 

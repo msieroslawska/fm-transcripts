@@ -100,7 +100,7 @@ So the same process, look at what happened. We would basically say, hey scope of
 We go up one level, in this case to the global scope, and we would say, hey, global scope, have you ever heard of an identifier called console? And even though we didn't formally declare it, it's an auto global, it's already there, there's already a red marble called console.
 
 [00:08:31]
-So what is global scope gonna do? Here's your red marble, and we can look on that marble. It's an object, it has a method call logged, and so on, and so we can invoke it. Everything with me on that, okay? When you reference a variable in a source position, you have to first look it up, and when you reference a variable in a target position, you have to first look it up.
+So what is global scope gonna do? Here's your red marble, and we can look on that marble. It's an object, it has a method called log, and so on, and so we can invoke it. Everything with me on that, okay? When you reference a variable in a source position, you have to first look it up, and when you reference a variable in a target position, you have to first look it up.
 
 [00:08:52]
 That's the key takeaway here, is that there is a look up process involved. So far our look ups have always found the thing that we were looking for. After a while, we'll talk about what happens when we don't find it. But right now we're all in the good path.

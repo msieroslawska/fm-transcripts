@@ -4,7 +4,7 @@
 >> Speaker 1: Red, okay. But let's look at line three because line looks a little bit different.
 
 [00:00:21]
-And line three might look a little bit more like some of the functions that you've seen more commonly. It's maybe a little less common to see the old school function decoration, although I strongly prefer function decorations just for the record. But most people seem to like these days to declare variables and assign functions to them and usually they even use a constant instead of a var.
+And line three might look a little bit more like some of the functions that you've seen more commonly. It's maybe a little less common to see the old school function declaration, although I strongly prefer function declarations just for the record. But most people seem to like these days to declare variables and assign functions to them and usually they even use a constant instead of a var.
 
 [00:00:43]
 So that might look a little bit like what you've seen recently. So what's happening there and is it any different than what's happening with line one? Well, remember, there is a difference between what can happen at compile time and what can happen at execution time. So, we do know that an identifier called myTeacher is going to be created and what color marble is it gonna be?
@@ -26,7 +26,7 @@ This is called a function expression as opposed to what line one is, is called a
 >> Speaker 1: That's why on line four, we can reference in anotherTeacher because there is in fact a blue marble called anotherTeacher. But down on line nine, there is no anotherTeacher, is there? When we're out in the global scope and we asked global scope you ever heard of this red marble, it's gonna say nope, never heard of that red marble and what we're gonna get there, reference error.
 
 [00:02:41]
-So key difference, function expressions, put there identify your into their own scope. There's a little nuance. Let me get to that question in a moment. There's a little, also, additional nuance which is not only does that blue marble show up in the blue scope but it's also read only.
+So key difference, function expressions, put their identifier into their own scope. There's a little nuance. Let me get to that question in a moment. There's a little, also, additional nuance which is not only does that blue marble show up in the blue scope but it's also read only.
 
 [00:03:00]
 You cannot reassign anotherTeacher on line four. You could not reassign it to some other value. You have a question, yes?

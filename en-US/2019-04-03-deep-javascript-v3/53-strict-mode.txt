@@ -2,7 +2,7 @@
 >> Kyle Simpson: So now if we flip on strict mode, which you do by putting this strict mode fragment at the top of any scope, preferably at the top of your program, the top of your file, or at the top of any function. If you turn on strict mode, all the same processing is going to happen.
 
 [00:00:15]
-So since we've run through this, we don't have to keep belaboring this point. But when we arrive at this line and we say, hey, scope of other class, I have this target reference for topic ever heard of it. There's no blue marble, we go to the global scope and we say, global scope have you ever heard of topic, and the global scope kind of respond with
+So since we've run through this, we don't have to keep belaboring this point. But when we arrive at this line and we say, hey, scope of otherClass, I have this target reference for topic ever heard of it. There's no blue marble, we go to the global scope and we say, global scope have you ever heard of topic, and the global scope kind of respond with
 
 [00:00:35]
 
@@ -13,9 +13,9 @@ So since we've run through this, we don't have to keep belaboring this point. Bu
 A reference error is, I couldn't find that variable, I can't give you a variable to use, okay? That's what we would like to happen all of the time. It now happens as the result of strict mode, you get a reference error. Sorry, no marble, tough luck. So one of the many, many reasons why it would be good for you to be using strict mode.
 
 [00:01:17]
-It will avoid mistakes like this, cuz it almost certainly a mistake, it should not be something you intentionally try to create global, yes?
->> Speaker 1: Is strict mode always pretty on ES6
->> Kyle Simpson: Strict mode is not always on. It's true that tools like Bubble and other transpilers basically always put the strict mode in there for you.
+It will avoid mistakes like this, cuz it is almost certainly a mistake, it should not be something you intentionally try to create global, yes?
+>> Speaker 1: Is strict mode always on pre-ES6?
+>> Kyle Simpson: Strict mode is not always on. It's true that tools like Babel and other transpilers basically always put the strict mode in there for you.
 
 [00:01:36]
 So if you're using transpired code, it was almost a virtual certainty that your code is running in strict mode. But JavaScript is not default the strict mode because then that would break a bunch of programs. So that were written 20 years ago or something. So because of backwards compatible, you will always have to opt into strict mode.

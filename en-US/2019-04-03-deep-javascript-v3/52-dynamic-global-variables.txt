@@ -3,8 +3,8 @@
 
 [00:00:16]
 
->> Speaker 2: Other class.
->> Kyle Simpson: Other class. I have a what kind of reference?
+>> Speaker 2: OtherClass.
+>> Kyle Simpson: OtherClass. I have a what kind of reference?
 >> Speaker 3: Target.
 >> Kyle Simpson: I have a target reference, thank you. I have a target reference for the identifier topic. Ever heard of it?
 >> Speaker 2: No.
@@ -15,7 +15,7 @@
 [00:00:30]
 I have a target reference for the variable called topic. Ever heard of it? And the answer is?
 >> Speaker 3: No.
->> Kyle Simpson: Well we would like for the answer to be no. It seems very reasonable for the answer to be no. In fact it seems somewhat crazy that it would ever be anything other than no but here we see one of the historical bad parts of JavaScript which is in the early days to be as forgiving as possible for people that didn't understand the language, they instituted this idea of auto global's.
+>> Kyle Simpson: Well we would like for the answer to be no. It seems very reasonable for the answer to be no. In fact it seems somewhat crazy that it would ever be anything other than no but here we see one of the historical bad parts of JavaScript which is in the early days to be as forgiving as possible for people that didn't understand the language, they instituted this idea of auto globals.
 
 [00:01:01]
 So if you try to assign to a variable that's never been formally declared. Once you arrive at the global scope, if you say hey, global scope, I'm looking for this marble called topic, ever heard of it? And the global scope instead of saying nope, sorry error, the global scope's gonna say I just created one for you.
@@ -52,7 +52,7 @@ Okay, regardless of how you wrap your brains around this just take this particul
 Any undeclared variable is going to end up creating this auto global. Now, the reason why that happens is because you'll notice that this program is not running in strict mode. And in just a moment, we'll see when we flip on strict mode, it will change that behavior. But this is running in the non-strict mode or sometimes called, sloppy mode.
 
 [00:03:31]
-You should be using strict mode, and if you were using strict mode, you wouldn't see this behavior. But since this code snip it isn't, that's what happens, as we end up creating a global variable called topic, okay? So execution is then done in the function. We execute console.log the same way as we have before.
+You should be using strict mode, and if you were using strict mode, you wouldn't see this behavior. But since this code snippet isn't, that's what happens, as we end up creating a global variable called topic, okay? So execution is then done in the function. We execute console.log the same way as we have before.
 
 [00:03:49]
 Execution moves to line 11. How does the execution of line 11 work? Hey, we gotta talk to a scope, right, same conversation as before, same narrative. So hey, global scope, hey red bucket. I have a what kind of reference?

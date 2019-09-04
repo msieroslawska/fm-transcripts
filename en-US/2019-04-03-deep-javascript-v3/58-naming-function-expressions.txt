@@ -11,7 +11,7 @@ So number one prefer a name function expression, because the name produces or cr
 It's useful if you need to access any properties on that function object such as its link or its name or other thing of that sort. Anytime you might need a self reference to the function, the single only right answer to that question is, it needs to have a name.
 
 [00:01:14]
-There were some pre ES6 sorts of hacks or an even pre ES5 sorts of hacks, where you could use arguments start calling as a reference to the function, it's not broken but essentially deprecated. The way to get a reference to a function from inside of itself and have a reliable reference is to use the name of your function expression.
+There were some pre ES6 sorts of hacks or an even pre ES5 sorts of hacks, where you could use arguments.callee as a reference to the function, it's not broken but essentially deprecated. The way to get a reference to a function from inside of itself and have a reliable reference is to use the name of your function expression.
 
 [00:01:35]
 In that previous example, when I had a variable name that was in the global scope, and then I had my function expression. Would it be more or less reliable for me to make a reference to a marble in my own scope that is read only, or to reference a marble in an enclosing scope that is not read only?
@@ -32,7 +32,7 @@ Even if you don't need it now, you might need it in the future, it's best to go 
 Okay, how many of you love seeing anonymous function, over and over again, line after line in your stack traces? Especially, when we're talking about production code that's been minified, so they all say line 1, character 32,712, cuz we all know exactly which function that is, right? Guess what happens if you use a name for your function expressions?
 
 [00:03:15]
-It shows up in the stack trace. If you use a good name not like food bar, but like handle user click, it's going to show up in the stack trace. So automatically by naming your functions, you make your code more debuggable, you make your stack traces more debuggable.
+It shows up in the stack trace. If you use a good name not like foobar, but like handleUserClick, it's going to show up in the stack trace. So automatically by naming your functions, you make your code more debuggable, you make your stack traces more debuggable.
 
 [00:03:32]
 Truth, I have on multiple occasions, looked at a stack trace that had good, useful semantic names in it, and been able to tell the source of the bug simply by looking at the names and the order of the functions, what didn't get called and what did get called.
@@ -44,20 +44,20 @@ Didn't even have to look at the code, I knew immediately what the bug was just f
 I don't know about you, but I need all the help I can debugging my programs. So, the extra effort is gonna pay off in dividends every time I have to debug the code. Number two, we want to have debuggable stack traces. And number three, and I think personally this might be the most important of all, but it's certainly the one that seems least obvious or maybe it's a little more controversial to other people.
 
 [00:04:28]
-Number three, by putting a name on your function, you make that code more self-documenting. If I have a function that is anonymous, and I look at that function to figure out what that anonymous function is doing, I have to read the function body and I also probably have to read where it's being parsed.
+Number three, by putting a name on your function, you make that code more self-documenting. If I have a function that is anonymous, and I look at that function to figure out what that anonymous function is doing, I have to read the function body and I also probably have to read where it's being passed.
 
 [00:04:47]
 
 >> Kyle Simpson: And I have to infer from those two pieces of information, the purpose of the function. I may be able to infer the purposes that it handles user clicks. But I would rather the reader not have to infer that its purpose is to handle user clicks when I could put a name there that makes it completely and totally unambiguous.
 
 [00:05:08]
-The function named handle user clicks doesn't require any other reading of the rest of the code, for me to figure out, you want me to handle user clicks with this function, yes?
+The function named handleUserClicks doesn't require any other reading of the rest of the code, for me to figure out, you want me to handle user clicks with this function, yes?
 >> Speaker 3: So this is more of a best practices question seems very compelling. My first instinct is then to say, okay, I'll just name the expression the same thing that I will name the variable of the scope above, I'm assuming, a, is that a case of shadowing?
 
 [00:05:33]
 And b,-
 >> Kyle Simpson: It is a case of shadowing.
->> Speaker 3: And at B, that's probably incredibly problematic for debris or is that something that would be considered-
+>> Speaker 3: And at B, that's probably incredibly problematic for variety of reasons or is that something that would be considered-
 >> Kyle Simpson: I wouldn't consider shadowing to be a problem or not a problem. In that particular scenario, I think it is unlikely that you're gonna need to have both references to the function.
 
 [00:05:52]
@@ -67,10 +67,10 @@ Maybe you're gonna need to and if you do, you're gonna have to name them somethi
 There are caveats to this, though, because sometimes, the usage of that function, where it's being passed to, or what it's going to do, it may have a different purpose than how you wanna describe it, in and of itself. So it might in fact be that there's a different, more appropriate name for the function, as opposed to what property it's being assigned to, or what variable it's being assigned to.
 
 [00:06:39]
-So they are not necessarily the same, but sometimes they might be, helpful? Good, so these three I think, taken together, make an ironclad case that your functions would make better code if your functions are named. Now I understand that that is problematic for most people that have that finger muscle memory of writing the functions anonymously.
+So they are not necessarily the same, but sometimes they might be, helpful? Good, so these three I think, taken together, make an ironclad case that your functions would make better code if your functions were named. Now I understand that that is problematic for most people that have that finger muscle memory of writing the functions anonymously.
 
 [00:07:12]
-That I've seen every single blog since the jQuery days, using anonymous functions. That every piece of code you've ever had any access to anonymous functions everywhere. And all of a sudden, here's this one guy telling you, no, no, no, those all need names. I get it, that's problematic, it's troublesome, it's extra work.
+That I've seen every single blog since the jQuery days, using anonymous functions. That every piece of code you've ever had any access to has anonymous functions everywhere. And all of a sudden, here's this one guy telling you, no, no, no, those all need names. I get it, that's problematic, it's troublesome, it's extra work.
 
 [00:07:29]
 But you have to go back to what I said about the purpose of code. The purpose of code is not to be convenient for you to type. The purpose of code is for you to communicate more clearly your intent. There are ways to solve each of these problems but the best way to solve these problems is to name the function.

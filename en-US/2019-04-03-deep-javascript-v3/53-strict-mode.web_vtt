@@ -32,7 +32,7 @@ we say, hey,
 
 7
 00:00:23.171 --> 00:00:28.240
-scope of other class, I have this target
+scope of otherClass, I have this target
 reference for topic ever heard of it.
 
 8
@@ -117,7 +117,7 @@ you to be using strict mode.
 25
 00:01:17.030 --> 00:01:20.639
 It will avoid mistakes like this,
-cuz it almost certainly a mistake,
+cuz it is almost certainly a mistake,
 
 26
 00:01:20.639 --> 00:01:24.443
@@ -127,7 +127,7 @@ intentionally try to create global, yes?
 27
 00:01:24.443 --> 00:01:26.520
 &gt;&gt; Speaker 1: Is strict
-mode always pretty on ES6
+mode always on pre-ES6?
 
 28
 00:01:27.560 --> 00:01:28.440
@@ -139,7 +139,7 @@ always on.
 
 30
 00:01:29.430 --> 00:01:32.360
-It's true that tools like Bubble and
+It's true that tools like Babel and
 
 31
 00:01:32.360 --> 00:01:36.750

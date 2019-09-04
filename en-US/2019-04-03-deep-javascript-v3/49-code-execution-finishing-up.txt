@@ -63,10 +63,10 @@ But before it can execute log, it's gotta figure out what's being passed to it, 
 >> Kyle Simpson: Here's your green marble. And now, because we're not assigning to it, now we want the value that's currently in it.
 
 [00:02:49]
-So we go to that area of memory. We pull the value out, which happens to be the string, Why in this case? And that argument is assigned to the parameter that console.log is receiving, okay? So arguments, the things that we pass in, get assigned to the parameters that receive them.
+So we go to that area of memory. We pull the value out, which happens to be the string, why in this case. And that argument is assigned to the parameter that console.log is receiving, okay? So arguments, the things that we pass in, get assigned to the parameters that receive them.
 
 [00:03:10]
-You can think about a parameter, like if I had function ask() and it took a parameter, the parameter is what kind of reference?
+You can think about a parameter, like if I had function ask and it took a parameter, the parameter is what kind of reference?
 >> Student: It's like a variable name.
 >> Kyle Simpson: It is, but what kind of reference is it? It's that position.
 >> Class: Target.

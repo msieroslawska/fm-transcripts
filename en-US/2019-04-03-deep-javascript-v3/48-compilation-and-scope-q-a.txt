@@ -1,7 +1,7 @@
 [00:00:00]
->> Speaker 1: I have a question about the function when the compilation is happening, the function other class gets its contents in the marble did you say?
+>> Speaker 1: I have a question about the function when the compilation is happening, the function otherClass gets its contents in the marble did you say?
 >> Kyle Simpson: I'm not sure I'm following.
->> Speaker 1: So when other class is being compiled-
+>> Speaker 1: So when otherClass is being compiled-
 >> Kyle Simpson: There's a map, like a plan, like a roadmap, made up by the compiler to say, for that blue bucket, you need to create an identifier called teacher.
 
 [00:00:28]

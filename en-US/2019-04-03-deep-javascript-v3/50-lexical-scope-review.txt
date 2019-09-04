@@ -30,8 +30,8 @@ It only needs to be created once for the same scope, and there really is no such
 
 >> Speaker 2: Red marble.
 >> Kyle: Red marble, [SOUND] we drop it in the red bucket, okay? Now we find the next formal declaration, line 3. Hey global scope, I have a formal declaration for-
->> Speaker 2: Other class.
->> Kyle: Other class, ever heard of it? And the answer is-
+>> Speaker 2: OtherClass.
+>> Kyle: OtherClass, ever heard of it? And the answer is-
 >> Speaker 2: No.
 >> Kyle: Never heard of it, but here's your-
 
@@ -41,7 +41,7 @@ It only needs to be created once for the same scope, and there really is no such
 >> Kyle: Red marble, [SOUND] we drop it in the red bucket. By the way, global scope, that red marble, that was pointing at a function. So we need a new bucket, we need a bucket inside of a bucket. Can you make us a blue bucket? Sure, okay now let's talk about the blue bucket.
 
 [00:02:53]
-So we stepped inside of the blue bucket, we move to line 4 and we find another formal declaration. Hey, scope of other class. Hey, blue bucket scope, I've a formal declaration for teacher. Have you ever heard it? And the answer is?
+So we stepped inside of the blue bucket, we move to line 4 and we find another formal declaration. Hey, scope of otherClass. Hey, blue bucket scope, I've a formal declaration for teacher. Have you ever heard it? And the answer is?
 >> Speaker 2: No.
 >> Kyle: Why, why haven't we heard of teacher?
 
@@ -102,7 +102,7 @@ Hey, global scope, I have a what kind of reference? Source.
 >> Kyle: The best answer is because it's not a target reference.
 
 [00:05:52]
-If it's not receiving a target, it must be a source, cuz that's the only two options. So we clearly see it's not receiving a target, it's not the target receiving something, so it must be a source. So, hey, global scope, I have a source reference for other class, every heard of it?
+If it's not receiving a target, it must be a source, cuz that's the only two options. So we clearly see it's not receiving a target, it's not the target receiving something, so it must be a source. So, hey, global scope, I have a source reference for otherClass, every heard of it?
 
 [00:06:05]
 And the answer is?
@@ -111,15 +111,15 @@ And the answer is?
 >> Speaker 2: Red marble.
 >> Kyle: Red marble, we go and look what's in that red marble, conceptually, what's in that area of memory? What is that red marble holding right now?
 >> Speaker 2: Blue bucket.
->> Kyle: A reference to that function which we call other class, right?
+>> Kyle: A reference to that function which we call otherClass, right?
 
 [00:06:23]
 It's the blue bucket if you will, exactly. So now we're going to execute that, which is what the parentheses do on the end of that line. They execute the function that we found. If we hadn't found a function we would have gotten a what kind of error, anybody remember?
 
 [00:06:36]
-A type error, reference errors will be different. We'll get to those in just a little bit, okay? All right, so we are executing the other class function. Execution moves to line 4. Hey, what scope?
+A type error, reference errors will be different. We'll get to those in just a little bit, okay? All right, so we are executing the otherClass function. Execution moves to line 4. Hey, what scope?
 >> Speaker 2: Blue.
->> Kyle: Blue scope, hey scope of other class. I have a what kind of reference?
+>> Kyle: Blue scope, hey scope of otherClass. I have a what kind of reference?
 
 [00:06:53]
 

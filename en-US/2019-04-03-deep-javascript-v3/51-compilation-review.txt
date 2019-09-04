@@ -27,7 +27,7 @@ We will of heard of it in execution. In compilation stage we'd never heard of it
 >> Kyle Simpson: Red marble. Here's your red marble, boop, goes in the red bucket.
 
 [00:01:26]
-By the way, global scope, that's a function. It needs its own bucket. Can you make me a blue bucket? Sure, we make a blue bucket. Here is your blue bucket and now we step into that scope and we process its plan, or we make it's plan. So where is the next formal declaration that we find?
+By the way, global scope, that's a function. It needs its own bucket. Can you make me a blue bucket? Sure, we make a blue bucket. Here is your blue bucket and now we step into that scope and we process its plan, or we make its plan. So where is the next formal declaration that we find?
 
 [00:01:44]
 
@@ -75,7 +75,7 @@ Everybody good with that? All right. Now remember, functions are declarations, t
 
 >> Kyle Simpson: Hey global scope, that's the red bucket. Hey global scope I have what kind of reference here? What kind of reference do I have on line nine?
 >> Speaker 2: Source.
->> Kyle Simpson: Source reference, I have a source reference for an identifier called other class. Have you ever heard of him before?
+>> Kyle Simpson: Source reference, I have a source reference for an identifier called otherClass. Have you ever heard of him before?
 
 [00:04:03]
 And the answer is?

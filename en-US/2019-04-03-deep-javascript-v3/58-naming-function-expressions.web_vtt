@@ -102,8 +102,8 @@ an even pre ES5 sorts of hacks,
 
 21
 00:01:18.808 --> 00:01:23.746
-where you could use arguments start
-calling as a reference to the function,
+where you could use arguments.callee
+as a reference to the function,
 
 22
 00:01:23.746 --> 00:01:26.851
@@ -256,8 +256,8 @@ It shows up in the stack trace.
 
 53
 00:03:19.305 --> 00:03:23.392
-If you use a good name not like food bar,
-but like handle user click,
+If you use a good name not like foobar,
+but like handleUserClick,
 
 54
 00:03:23.392 --> 00:03:25.917
@@ -376,7 +376,7 @@ I have to read the function body and
 78
 00:04:43.428 --> 00:04:47.387
 I also probably have to read
-where it's being parsed.
+where it's being passed.
 
 79
 00:04:47.387 --> 00:04:51.399
@@ -408,8 +408,8 @@ totally unambiguous.
 
 85
 00:05:08.536 --> 00:05:12.266
-The function named handle user
-clicks doesn't require any other
+The function named handleUserClicks
+doesn't require any other
 
 86
 00:05:12.266 --> 00:05:15.312
@@ -452,7 +452,7 @@ shadowing.
 94
 00:05:35.567 --> 00:05:39.602
 &gt;&gt; Speaker 3: And at B, that's probably
-incredibly problematic for debris or is
+incredibly problematic for variety of reasons or is
 
 95
 00:05:39.602 --> 00:05:43.481
@@ -554,7 +554,7 @@ that your functions would
 115
 00:06:58.019 --> 00:07:03.550
 make better code if your
-functions are named.
+functions were named.
 
 116
 00:07:03.550 --> 00:07:08.429
@@ -574,7 +574,7 @@ jQuery days, using anonymous functions.
 119
 00:07:18.027 --> 00:07:21.703
 That every piece of code you've ever
-had any access to anonymous functions
+had any access to has anonymous functions
 
 120
 00:07:21.703 --> 00:07:22.414

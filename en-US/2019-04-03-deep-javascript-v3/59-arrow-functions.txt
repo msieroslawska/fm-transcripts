@@ -2,23 +2,23 @@
 >> Kyle Simpson: Some of you may be wondering, well what about arrow functions? That favorite feature that we've added to ES6 for who knows how long, I mean who knows how long people have been asking for this arrow function, but it finally landed in ES6. I like to imagine that maybe Brendan Ike wanted to do that in the original prototypes, and it just took him 15 years or whatever.
 
 [00:00:23]
-But arrow functions arrived in year six a few years back. And it is as if the clouds opened and heaven shone down upon us, if you will, that people just seemed to move to this new level of enlightenment and love and joy for the language once they got the arrow function.
+But arrow functions arrived in ES6 a few years back. And it is as if the clouds opened and heaven shone down upon us, if you will, that people just seemed to move to this new level of enlightenment and love and joy for the language once they got the arrow function.
 
 [00:00:41]
-You see here on line 1, the usage of an arrow function in the math, as opposed to a name function expression. So you're wondering, hey Kyle, what's your feeling about arrow functions? And my response is, arrow functions are anonymous.
+You see here on line 1, the usage of an arrow function in the map, as opposed to a named function expression. So you're wondering, hey Kyle, what's your feeling about arrow functions? And my response is, arrow functions are anonymous.
 >> Kyle Simpson: I don't think you should use anonymous function expressions, I think you can do the math.
 
 [00:01:01]
 I don't think you ought to be using arrow functions. Certainly I don't think you should be using arrow functions as a general replacement for all other functions. You shouldn't be using them just because they're nice and short, concise syntax. That isn't why they were created, that's only one of the characteristics that maybe I think could be argued not even the primary characteristic.
 
 [00:01:22]
-The shorter the syntax by the way, the more complex the corner cases of syntax are. And if you've ever wrangled various different corner cases, there is like 15 different variations on the arrow function syntax. So doesn't come without a cost. But I would tell you that the only way looking at line 1 that you can figure out what that error function is doing, is to read it's function body.
+The shorter the syntax by the way, the more complex the corner cases of syntax are. And if you've ever wrangled various different corner cases, there is like 15 different variations on the arrow function syntax. So doesn't come without a cost. But I would tell you that the only way looking at line 1 that you can figure out what that arrow function is doing, is to read its function body.
 
 [00:01:47]
 But when I read the function name I don't need to read any code. There's one English name there that tells me the purpose of that function. A lot of people argue with me and say, the arrow function on line 1 is completely self obvious. Maybe it is self obvious, but it is still an inference.
 
 [00:02:05]
-You are still having to infer the purpose of that from the code, rather than seeing the purpose listed out. And if I gave an even better name, I was saving space on the slides. But if I gave an even better name like get person ID or get default person id.
+You are still having to infer the purpose of that from the code, rather than seeing the purpose listed out. And if I gave an even better name, I was saving space on the slides. But if I gave an even better name like get personID or getDefault PersonId.
 
 [00:02:20]
 I can put lots of more information in there that semantically tells the reader of my code what its purpose is, that would not be obvious in the code.
@@ -26,7 +26,7 @@ I can put lots of more information in there that semantically tells the reader o
 
 [00:02:44]
 But I do not endorse or recommend or suggest using them as a general replacement for any function.
->> Kyle Simpson: Short or long? Another example, if you've done promise chains, I'm not a big fan of promise chains anyway, but if you like to do promise chains, this is another case where you often will just parse in these functions.
+>> Kyle Simpson: Short or long? Another example, if you've done promise chains, I'm not a big fan of promise chains anyway, but if you like to do promise chains, this is another case where you often will just pass in these functions.
 
 [00:03:06]
 Here's one of these places where even though, that I was asked earlier, I might tend for my rule because this is a one liner on line 14. I might tend to do that as an inline function expression, because I really dislike the readability of promise chain so much.

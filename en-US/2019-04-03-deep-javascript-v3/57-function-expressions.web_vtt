@@ -44,12 +44,12 @@ you've seen more commonly.
 10
 00:00:27.230 --> 00:00:30.700
 It's maybe a little less common to see
-the old school function decoration,
+the old school function declaration,
 
 11
 00:00:30.700 --> 00:00:34.410
 although I strongly prefer function
-decorations just for the record.
+declarations just for the record.
 
 12
 00:00:34.410 --> 00:00:39.320
@@ -222,7 +222,7 @@ So key difference, function expressions,
 
 48
 00:02:45.350 --> 00:02:48.859
-put there identify your
+put their identifier
 into their own scope.
 
 49

@@ -19,8 +19,8 @@ Maybe it was allocated but there's never been a value assigned to that.
 It may have never had a value or it might have used to have a value and it doesn't anymore but there is no other value in the vacuum of space it is undefined, right? Undeclared even though they sound like synonyms undeclared is actually never formally declared in any scope that we have accessed to.
 
 [00:01:18]
-That's what undeclared means. We do not have a marble for it. And in strict mode, it always results in those reference areas, okay? It's important to keep those straight. Unfortunately, JavaScript tries to mess around with this and pretend that undeclared is sort of the same thing as undefined and some of its error messages and other outputtings and things and not is historically a really bad idea.
+That's what undeclared means. We do not have a marble for it. And in strict mode, it always results in those reference errors, okay? It's important to keep those straight. Unfortunately, JavaScript tries to mess around with this and pretend that undeclared is sort of the same thing as undefined and some of its error messages and other outputs and things and not is historically a really bad idea.
 
 [00:01:43]
-We need to keep these two concepts separate. There's a different something being undeclared doesn't exist, and being undefine definitely it does exist, but doesn't have a value.
+We need to keep these two concepts separate. There's a different something being undeclared doesn't exist, and being undefined definitely it does exist, but doesn't have a value.
 

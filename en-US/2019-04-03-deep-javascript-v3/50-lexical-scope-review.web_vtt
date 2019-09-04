@@ -241,11 +241,11 @@ I have a formal declaration for-
 
 51
 00:02:30.699 --> 00:02:31.419
-&gt;&gt; Speaker 2: Other class.
+&gt;&gt; Speaker 2: OtherClass.
 
 52
 00:02:31.419 --> 00:02:32.729
-&gt;&gt; Kyle: Other class, ever heard of it?
+&gt;&gt; Kyle: OtherClass, ever heard of it?
 
 53
 00:02:32.729 --> 00:02:34.522
@@ -296,7 +296,7 @@ we find another formal declaration.
 
 63
 00:02:59.050 --> 00:03:01.480
-Hey, scope of other class.
+Hey, scope of otherClass.
 
 64
 00:03:01.480 --> 00:03:05.660
@@ -638,7 +638,7 @@ so it must be a source.
 137
 00:06:01.779 --> 00:06:04.331
 So, hey, global scope,
-I have a source reference for other class,
+I have a source reference for otherClass,
 
 138
 00:06:04.331 --> 00:06:05.040
@@ -680,7 +680,7 @@ What is that red marble holding right now?
 147
 00:06:19.192 --> 00:06:23.119
 &gt;&gt; Kyle: A reference to that function
-which we call other class, right?
+which we call otherClass, right?
 
 148
 00:06:23.119 --> 00:06:25.240
@@ -721,7 +721,7 @@ okay?
 156
 00:06:41.189 --> 00:06:44.289
 All right, so
-we are executing the other class function.
+we are executing the otherClass function.
 
 157
 00:06:44.289 --> 00:06:47.227
@@ -738,7 +738,7 @@ Hey, what scope?
 
 160
 00:06:50.081 --> 00:06:51.809
-hey scope of other class.
+hey scope of otherClass.
 
 161
 00:06:51.809 --> 00:06:53.669
@@ -824,7 +824,7 @@ Hey scope of?
 
 181
 00:07:27.120 --> 00:07:28.569
-&gt;&gt; Kyle: Hey scope of other class.
+&gt;&gt; Kyle: Hey scope of otherClass.
 
 182
 00:07:28.569 --> 00:07:30.419

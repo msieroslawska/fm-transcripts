@@ -368,7 +368,7 @@ So we go to that area of memory.
 84
 00:02:51.439 --> 00:02:55.539
 We pull the value out, which happens
-to be the string, Why in this case?
+to be the string, why in this case.
 
 85
 00:02:55.539 --> 00:02:59.956
@@ -391,7 +391,7 @@ that receive them.
 89
 00:03:10.399 --> 00:03:15.668
 You can think about a parameter,
-like if I had function ask() and
+like if I had function ask and
 
 90
 00:03:15.668 --> 00:03:20.668

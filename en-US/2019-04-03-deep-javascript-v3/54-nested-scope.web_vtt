@@ -17,7 +17,7 @@ stretch that bucket metaphor.
 4
 00:00:07.230 --> 00:00:10.514
 Now we're talking about the bucket within
-the side of a bucket within the side of
+inside of a bucket within inside of
 
 5
 00:00:10.514 --> 00:00:11.998
@@ -97,17 +97,17 @@ Now we're inside of the blue scope.
 22
 00:00:46.040 --> 00:00:49.040
 Line six is a declaration that
-creates what color module?
+creates what color marble?
 
 23
 00:00:49.040 --> 00:00:50.524
 &gt;&gt; Class: Blue.
-&gt;&gt; Kyle Simpson: The blue module,
+&gt;&gt; Kyle Simpson: The blue marble,
 
 24
 00:00:50.524 --> 00:00:53.850
 cuz ask is in the scope of
-the other class, right?
+otherClass, right?
 
 25
 00:00:53.850 --> 00:00:57.810
@@ -296,7 +296,7 @@ in this case it's a literal.
 
 66
 00:02:47.800 --> 00:02:49.850
-And what happens to the string line?
+And what happens to the string why?
 
 67
 00:02:51.050 --> 00:02:53.327
@@ -476,7 +476,7 @@ on line ten-
 
 106
 00:04:35.350 --> 00:04:39.034
-is JavaScript saying far question
+is JavaScript saying var question
 equals why at some point?
 
 107

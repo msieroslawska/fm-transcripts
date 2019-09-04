@@ -36,7 +36,7 @@ it just took him 15 years or whatever.
 8
 00:00:23.961 --> 00:00:27.540
 But arrow functions arrived
-in year six a few years back.
+in ES6 a few years back.
 
 9
 00:00:27.540 --> 00:00:32.532
@@ -56,11 +56,11 @@ once they got the arrow function.
 12
 00:00:41.360 --> 00:00:44.944
 You see here on line 1, the usage
-of an arrow function in the math,
+of an arrow function in the map,
 
 13
 00:00:44.944 --> 00:00:48.200
-as opposed to a name function expression.
+as opposed to a named function expression.
 
 14
 00:00:48.200 --> 00:00:51.689
@@ -140,8 +140,8 @@ looking at line 1 that you can figure out
 
 30
 00:01:42.822 --> 00:01:47.179
-what that error function is doing,
-is to read it's function body.
+what that arrow function is doing,
+is to read its function body.
 
 31
 00:01:47.179 --> 00:01:49.980
@@ -184,7 +184,7 @@ I was saving space on the slides.
 39
 00:02:15.669 --> 00:02:20.419
 But if I gave an even better name like
-get person ID or get default person id.
+get personID or getDefaultPersonId.
 
 40
 00:02:20.419 --> 00:02:24.415
@@ -241,7 +241,7 @@ if you like to do promise chains,
 51
 00:03:02.630 --> 00:03:06.350
 this is another case where you often
-will just parse in these functions.
+will just pass in these functions.
 
 52
 00:03:06.350 --> 00:03:11.337

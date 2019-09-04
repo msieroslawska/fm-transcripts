@@ -21,10 +21,10 @@ They're there for you, you see what they receive as arguments, I mean, as parame
 So your output needs to match this output, okay? What printRecords does is it takes a list of student IDs. So it's gonna take an array of student IDs as you see here, we are passing in an array of student IDs called currentEnrollment. So printRecords takes a list of student IDs and needs to retrieve each student record.
 
 [00:02:30]
-Those are stored in the studentRecords array. Retrieve each record by ID, and there's a hint there than you can use array find. Sorted by the student name, ascending. You can use array sort, but you're gonna have to use a custom function. And then print each record to the console or the console log statement including their name, their ID, and whether or not they're paid.
+Those are stored in the studentRecords array. Retrieve each record by ID, and there's a hint there than you can use array.find. Sorted by the student name, ascending. You can use array.sort, but you're gonna have to use a custom function. And then print each record to the console or the console.log statement including their name, their ID, and whether or not they're paid.
 
 [00:02:56]
-That's what that function does. Number two, the paid students to enroll function looks through all the student records and checks to see if any of them are paid but not yet enrolled. Meaning they're not yet in the currentEnrollment array, their ID isn't there. Collect those IDs and then return a new array with the previously enrolled IDs plus the new ones.
+That's what that function does. Number two, the paidStudentsToEnroll function looks through all the student records and checks to see if any of them are paid but not yet enrolled. Meaning they're not yet in the currentEnrollment array, their ID isn't there. Collect those IDs and then return a new array with the previously enrolled IDs plus the new ones.
 
 [00:03:15]
 So, it doesn't modify, it returns a new array. And finally, the remindUnpaid is you're gonna take a list of student IDs and filter that list to only ones whose records are in the unpaid status. And then pass that list back to our printRecords from item one to print out only the students that are unpaid.

@@ -3,7 +3,7 @@
 
 [00:00:27]
 
->> Kyle Simpson: If you were to replace the var online with a let, even though in this particular example it would still functionally work. My argument is that it would remove a small amount of important semantic information from the reader, because the reader would then not know, well what is your intent?
+>> Kyle Simpson: If you were to replace the var on line 2 with a let, even though in this particular example it would still functionally work. My argument is that it would remove a small amount of important semantic information from the reader, because the reader would then not know, well what is your intent?
 
 [00:00:48]
 Is your intent for me to use it everywhere or is your intent for me to only use here at the very top of the function? I don't really know, because lets are supposed to signal a very localized usage of a variable, ideally within only a couple of lines of code.
@@ -57,10 +57,10 @@ So guess what would happen if we did our global find and replace from var to let
 So this is one of those places where I tend to prefer using something like a var. While we're on the topic of var, another thing that var can do which let can not is that you can use var more than once inside of a scope. Here var is being used twice within a function scope, and we're not gonna get any exceptions whatsoever.
 
 [00:05:59]
-And I used the var online six because I was trying to disambiguate where id comes from. This is a semantic signal that I'm sending to the reader, regardless of which path we go through, there's gonna be an id in the function scope and it's gonna have a value.
+And I used the var on line six because I was trying to disambiguate where id comes from. This is a semantic signal that I'm sending to the reader, regardless of which path we go through, there's gonna be an id in the function scope and it's gonna have a value.
 
 [00:06:16]
-So I put var in both places, and I can do that because that's what var can do. I can't do that with a let. I don't do this that often, as again as I've said. This is not something that happens a lot in the code. But in the places that it happens, I think that it is better that var is a tool that has a different capability then does let.
+So I put var in both places, and I can do that because that's what var can do. I can't do that with a let. I don't do this that often, as again as I've said. This is not something that happens a lot in the code. But in the places that it happens, I think that it is better that var is a tool that has a different capability than does let.
 
 [00:06:37]
 And if I had adopted some ESLint rule that completely forbid all uses of var, I would be restricted in this scenario. Here's another place where I like to use the var for the disambiguation of scope. I tended to prefer my functions to be no longer than about 15 or 20 lines of code.
@@ -87,7 +87,7 @@ It's almost always that it augments. And so what we have here is an example wher
 [00:09:04]
 They both are useful for our programs. You had a question?
 >> Speaker 1: Yeah, if you, like in this case, if you have id twice. Is then the var stored in the same memory location or are there two memory locations that reference each other or?
->> Kyle Simpson: Just one marble. Remember from our earlier example, when we run across the second var on line six during the compilation phase, we would have said, hey blue scope, hey scope of lookup record, ever heard of this thing called id?
+>> Kyle Simpson: Just one marble. Remember from our earlier example, when we run across the second var on line six during the compilation phase, we would have said, hey blue scope, hey scope of lookupRecord, ever heard of this thing called id?
 
 [00:09:30]
 And he would have said, yep, and he would have said, okay cool, nothing to do, no op. There's already a marble called id.

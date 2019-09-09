@@ -20,5 +20,5 @@ I've only ever found one exception in all of my coding where that is something t
 That's pretty rare, but I agree with the majority in that case, okay? But what about line 8? Is this code so broken because I'm calling getTeacher even though the function declaration's at the bottom? Many more people are familiar with, or okay with, or feeling comfortable with the function hoisting than with the variable wasting.
 
 [00:02:09]
-So I would say it kinda depends. You might think that function hoisting is bad, but you might think is okay. And I happen to think not only is it okay, but its extremely useful for code readability. It's extremely useful to be able to put the executable code at the top and the functions at the bottom.
+So I would say it kinda depends. You might think that function hoisting is bad, but you might think is okay. And I happen to think not only is it okay, but it's extremely useful for code readability. It's extremely useful to be able to put the executable code at the top and the functions at the bottom.
 

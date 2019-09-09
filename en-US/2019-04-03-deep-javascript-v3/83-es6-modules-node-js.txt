@@ -26,7 +26,7 @@ And that's fine. If you use that syntax, that's great. I'm gonna show you briefl
 >> Speaker 2: Is there a one or two sentence TLDR about what the incompatibility is between the spec as written?
 
 [00:03:15]
-Does it have to do with or?
+And the way that, like, has to do with libuv?
 >> Kyle Simpson: Yeah, so this is not the complete problem, but this is probably one of the bigger problems. Node wants to preserve the ability for you to do an old style require of a new style ES6 module, or do an ES6 module style import of an old style Common JS module.
 
 [00:03:40]

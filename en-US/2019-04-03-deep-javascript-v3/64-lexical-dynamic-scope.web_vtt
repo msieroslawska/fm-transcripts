@@ -36,7 +36,7 @@ That's where that name even comes from,
 8
 00:00:23.999 --> 00:00:29.480
 that lex shares the same root as
-the first stage of parsing, the lexa.
+the first stage of parsing, the lexer.
 
 9
 00:00:29.480 --> 00:00:34.957
@@ -146,7 +146,7 @@ amount of scripting in Bash,
 31
 00:01:50.190 --> 00:01:53.590
 it is actually dynamically scoped
-rather than lexical scoped.
+rather than lexically scoped.
 
 32
 00:01:53.590 --> 00:01:58.220

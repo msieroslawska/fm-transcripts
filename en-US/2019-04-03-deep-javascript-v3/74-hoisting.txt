@@ -26,7 +26,7 @@ You certainly can't use regular expressions for that, because JavaScript is a no
 And then any of those places where a declaration could have occurred, then you can pull those out, and you could theoretically rearrange and move those. And guess what that magical, fancy processing would be called? Parsing, okay? That's called parsing. If you wanna find the variable declarations further down in the block, the only way you can do that is with parsing.
 
 [00:03:23]
-So hoisting isn't really a thing, it is a shorthand, a convention that we can use to try to describe something without needing to get into the nitty-gritty details. I'm not saying that it is a bad thing but what has been rather prevalent, as I have seen, in, I can't even count how many Stack Overflow.
+So hoisting isn't really a thing, it is a shorthand, a convention that we can use to try to describe something without needing to get into the nitty-gritty details. I'm not saying that it is a bad thing but what has been rather prevalent, as I have seen, in, I can't even count how many Stack Overflow posts.
 
 [00:03:45]
 When people asks questions about why JavaScript is doing something and it seems like it's weird or broken, and they post some code example. And then somebody says, well, it's because of the hoisting, and then this person says, Okay. And then it turns out that they're just wrong. This may be surprising to you, but did you know that stuff is wrong on Stack Overflow?
@@ -44,12 +44,12 @@ And I'm the one that wrote the book, my name is on the book. There is nobody on 
 >> Speaker 2: [LAUGH]
 >> Kyle Simpson: Can we agree with that?
 >> Speaker 2: Good point, there.
->> Kyle Simpson: Okay? Whether I'm wrong about JavaScript is a separate issue, but what I mean, I'm the authoritative on the spec, okay?
+>> Kyle Simpson: Okay? Whether I'm wrong about JavaScript is a separate issue, but what I mean, I'm the authoritative, I'm the spec, okay?
 
 [00:05:10]
 
 >> Speaker 2: [LAUGH]
->> Kyle Simpson: Somebody else answered the question, and they were completely wrong. Just 100% totally wrong. I don't feel, I'm not like down on that person, people make mistakes, they don't understand stuff. But here's what was so demoralizing, the green check mark and over 4000 uploads. Even when I post my little answer there is now like 17 uploads, it's never going to get seen by anybody.
+>> Kyle Simpson: Somebody else answered the question, and they were completely wrong. Just 100% totally wrong. I don't feel, I'm not like down on that person, people make mistakes, they don't understand stuff. But here's what was so demoralizing, the green check mark and over 4000 upvotes. Even when I post my little answer there is now like 17 upvotes, it's never going to get seen by anybody.
 
 [00:05:39]
 So you can't always trust what you read on Soccer List. Sorry for that little digression, okay?
@@ -60,16 +60,16 @@ So you can't always trust what you read on Soccer List. Sorry for that little di
 And somebody will answer it and they'll use hoisting, and it will perpetuate inaccuracy. It is not that hoisting is unhelpful to you, but when you use hoisting, and you don't know the nuances, and you don't know what's actually happening, then you actually get misled into thinking the wrong thing.
 
 [00:06:22]
-Which is why I first taught you ow it really works, and how we're circling back to the more shorthand definition, because armed with both of those, you can make sure in the future that you don't get confused. But armed only with hoisting, it only takes a few lines of code for me to confuse a developer.
+Which is why I first taught you how it really works, and how we're circling back to the more shorthand definition, because armed with both of those, you can make sure in the future that you don't get confused. But armed only with hoisting, it only takes a few lines of code for me to confuse a developer.
 
 [00:06:41]
 So it is not the case that these get moved up, just like it is not the case that functions get reassigned. This code, if we were trying to figure out what it did, we would say according to hoisting, that this is what it did. It moved the function first, and then it moved the variable declaration, and then it executed.
 
 [00:06:59]
-For the exact same reason it doesn't lose variables, it doesn't lose functions. It handle them during the first pass, and then it execute. There is, however, and important distinction to be made here on this slide, which is the difference between a function declaration and a function expression. A number of you were asking when we were talking about error functions, hey well, isn't it okay if I just assign my favorite loving error function to a variable?
+For the exact same reason it doesn't lose variables, it doesn't lose functions. It handle them during the first pass, and then it executes. There is, however, and important distinction to be made here on this slide, which is the difference between a function declaration and a function expression. A number of you were asking when we were talking about arrow functions, hey well, isn't it okay if I just assign my favorite loving arrow function to a variable?
 
 [00:07:31]
-Is it okay? Yes. Will it work? It depends. In this particular example, we have the functions having to move to the top, but notice what happened to the function assignment on line 9, it's still only happens on line 9. Which means that line seven is going to throw a type error.
+Is it okay? Yes. Will it work? It depends. In this particular example, we have the functions having been moved to the top, but notice what happened to the function assignment on line 9, it's still only happens on line 9. Which means that line seven is going to throw a type error.
 
 [00:07:49]
 So in other words, to use the form of function where you only assign it to properties or variables, you have to have all of your functions defined before you call them. Some people like that. As a matter of fact, for probably more than 15 years of my development career, I did exactly that.
@@ -87,5 +87,5 @@ And so I just started putting all the functions at the bottom of any scope. And 
 And I take advantage of the fact that functions hoist. They hoist, right? They are taken at compile time and defined in such a way so that they can be used even earlier in the scope than when they've been declared. So there are many, many people that say that JavaScript's hoisting mechanism is a bad, poorly designed, buggy part of the system.
 
 [00:09:21]
-And it's why JavaScript doesn't qualify as a lexically scoped language because of hoisting, and we shouldn't use it, and shouldn't rely upon it. And as with most things, it kinda depends, it depend on your perspective of what you're trying to accomplish. It is sometimes the case that hoisting is bad, and sometimes the case I think it's quite useful.
+And it's why JavaScript doesn't qualify as a lexically scoped language because of hoisting, and we shouldn't use it, and shouldn't rely upon it. And as with most things, it kinda depends, it depends on your perspective of what you're trying to accomplish. It is sometimes the case that hoisting is bad, and sometimes the case I think it's quite useful.
 

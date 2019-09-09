@@ -212,7 +212,7 @@ forced me into that decision.
 45
 00:03:06.090 --> 00:03:07.820
 But turns out it's much
-more nuance than that.
+more nuanced than that.
 
 46
 00:03:08.884 --> 00:03:13.400
@@ -409,7 +409,7 @@ expression to a variable,
 
 86
 00:05:42.400 --> 00:05:48.220
-the variables decoration itself hoisted,
+the variable's declaration is self hoisted,
 but the assignment is a run time thing.
 
 87

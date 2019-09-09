@@ -13,7 +13,7 @@ inside of those parentheses and
 3
 00:00:09.732 --> 00:00:14.761
 then immediately run that expression,
-why couldn't i just
+why couldn't I just
 
 4
 00:00:14.761 --> 00:00:20.008
@@ -226,7 +226,7 @@ anonymous function expressions, and
 
 48
 00:03:03.987 --> 00:03:05.200
-that includes your IFFIEs.
+that includes your IIFEs.
 
 49
 00:03:06.280 --> 00:03:09.730
@@ -248,7 +248,7 @@ It's not very easy to figure out.
 
 53
 00:03:19.109 --> 00:03:21.757
-You could still call it another teacher or
+You could still call it anotherTeacher or
 
 54
 00:03:21.757 --> 00:03:26.459
@@ -354,7 +354,7 @@ expression include a try, catch.
 75
 00:04:43.920 --> 00:04:48.610
 For example, I often will do something
-like teacher equals fetchteacher and
+like teacher equals fetchTeacher and
 
 76
 00:04:48.610 --> 00:04:50.950
@@ -364,7 +364,7 @@ able to throw exception.
 77
 00:04:50.950 --> 00:04:56.220
 So it would be nice if I would wrap that
-in a try catch then have a fall back.
+in a try catch then have a fallback.
 
 78
 00:04:56.220 --> 00:04:59.660

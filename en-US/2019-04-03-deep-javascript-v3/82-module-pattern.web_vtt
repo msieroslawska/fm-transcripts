@@ -234,7 +234,7 @@ It's just not possible, okay?
 
 49
 00:03:11.950 --> 00:03:16.400
-Even the F6 modules, which we will talk
+Even the ES6 modules, which we will talk
 about in a little bit, conceptually,
 
 50
@@ -395,11 +395,11 @@ Teacher is hidden.
 
 83
 00:05:16.668 --> 00:05:18.643
-Roll that.
+Follow that?
 
 84
 00:05:20.689 --> 00:05:22.371
-&gt;&gt; Kyle Simpson: That's closure inaction.
+&gt;&gt; Kyle Simpson: That's closure in action.
 
 85
 00:05:22.371 --> 00:05:26.630
@@ -529,8 +529,8 @@ as factory functions, okay?
 
 112
 00:07:04.780 --> 00:07:08.470
-This is a workshop
-module factory function.
+This is a WorkshopModule
+factory function.
 
 113
 00:07:08.470 --> 00:07:12.710
@@ -588,7 +588,7 @@ that's ever been written
 124
 00:07:54.360 --> 00:07:59.980
 has used some mechanism like the module
-pattern as it's code organization pattern.
+pattern as its code organization pattern.
 
 125
 00:07:59.980 --> 00:08:04.050

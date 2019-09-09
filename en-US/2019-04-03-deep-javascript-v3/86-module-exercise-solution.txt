@@ -18,14 +18,14 @@ So I'll start by doing that, I'll say defineWorkshop. And this one big function 
 So, we're gonna take id, name, and paid as the input. And we're going to push into the studentRecords array,
 >> Kyle Simpson: An object that includes id, name, and paid.
 >> Kyle Simpson: EnrollStudent is similar, enrollStudent,
->> Kyle Simpson: Takes a student id, and it pushes that into the currentEnrollment array. I'm gonna do one extra check since this is an API now rather than being set up, it's I'm gonna do an extra check that makes sure that I'm not try to add duplicate IDs into the array.
+>> Kyle Simpson: Takes a student id, and it pushes that into the currentEnrollment array. I'm gonna do one extra check since this is an API now rather than being set up, it's I'm gonna do an extra check that makes sure that I'm not trying to add duplicate IDs into the array.
 
 [00:02:34]
-So I will do if (!currentEnrollment.includes(id), and currentEnrollment.push(id). ReadMe then says we need a printCurrentEnrollment. So what would printCurrenEenrollment do?
+So I will do if not currentEnrollment.includes id, and currentEnrollment.push id . ReadMe then says we need a printCurrentEnrollment. So what would printCurrenEenrollment do?
 >> Kyle Simpson: It doesn't take any inputs, it essentially takes the place of this call. This one is printing the currentEnrollment, so let's literally just copy that into our printCurrentEnrollment. We don't want them to provide their own list of IDs, because that's the whole purpose of the module is to abstract that detail and keep it as a hidden implementation, okay?
 
 [00:03:30]
-Next the readme says we need an enrollPaidStudents. Exactly the same, enrollPaidStudents is doing the same thing as this, which is to call paid students to enroll, and then update the current enrollment array with it. So, let's do,
+Next the readme says we need an enrollPaidStudents. Exactly the same, enrollPaidStudents is doing the same thing as this, which is to call paidStudentsToEnroll, and then update the current enrollment array with it. So, let's do,
 >> Kyle Simpson: What's it called again, enrollPaidStudent.
 >> Kyle Simpson: And then finally, we need a remindUnpaidStudents.
 
@@ -55,7 +55,7 @@ All right, so now those are all my function calls.
 
 >> Kyle Simpson: PrintCurrentEnrollment.
 >> Kyle Simpson: I think I missed a detail there.
->> Kyle Simpson: I not only need to update it, but we need to print the records, so I missed that [INAUDIBLE]. Our enroll paid students needs to update the enrollment and print those records.
+>> Kyle Simpson: I not only need to update it, but we need to print the records, so I missed that [INAUDIBLE]. Our enrollPaidStudents needs to update the enrollment and print those records.
 >> Kyle Simpson: We call deepJS.enrollPaidStudents. And then last but not least, ddeepJS.RemindUnpaidSstudents.
 
 [00:08:07]

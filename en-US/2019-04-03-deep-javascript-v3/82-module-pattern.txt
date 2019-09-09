@@ -23,7 +23,7 @@ There's an idea of visibility, even if the only visibility notion is either publ
 So we can take this same idea and layer on the idea, or layer on the technique of encapsulation of information hiding, and we all of the sudden make it a module. So let's look at what that looks like. The classic module pattern, sometimes referred to as the revealing module pattern, it encapsulates data and it does so with closure.
 
 [00:03:03]
-That's key. So you can't have a module, if you don't have closure. It's just not possible, okay? Even the F6 modules, which we will talk about in a little bit, conceptually, we need to think about them as closure. The module pattern, first sort of codified as the classic or the revealing module pattern.
+That's key. So you can't have a module, if you don't have closure. It's just not possible, okay? Even the ES6 modules, which we will talk about in a little bit, conceptually, we need to think about them as closure. The module pattern, first sort of codified as the classic or the revealing module pattern.
 
 [00:03:26]
 It was codified by Doug Crawford-ish in 2001, and this is kinda what it looks like. It has two components to it. Number one, we have an outer enclosing function. In this case, it's an IIFE, everybody see the IIFE there? It's an IIFE, and when we run a module as an IIFE, that's kind of like saying it's a singleton.
@@ -38,8 +38,8 @@ Since it's closed over the teacher variable, the workshop object on the outside,
 We keep our private state private, and we expose things on an object, like what I'm doing here with the public API object. Is I'm exposing only the ask function. But I could have hundreds of other functions that were private, that could not be accessed from the outside. And yet the closure functions can access them all day long, if they want to, because of closure.
 
 [00:05:11]
-So I can say workshop.ask, but I can't say workshop.teacher. Teacher is hidden. Roll that.
->> Kyle Simpson: That's closure inaction. It's only one of hundreds of possible applications of closure. But we couldn't do the module pattern in this way. We couldn't affect this idea of information hiding of encapsulation without closure.
+So I can say workshop.ask, but I can't say workshop.teacher. Teacher is hidden. Follow that?
+>> Kyle Simpson: That's closure in action. It's only one of hundreds of possible applications of closure. But we couldn't do the module pattern in this way. We couldn't affect this idea of information hiding of encapsulation without closure.
 
 [00:05:37]
 
@@ -53,13 +53,13 @@ It's just an over-engineered namespace, okay? The purpose of a module is that yo
 >> Kyle Simpson: That's the idea here. Minimally expose only what's necessary. That's the module pattern. Now, the previous slide had a module IIFE, AKA, a module singleton. But that's not the only way to make modules. We can make just regular functions that can be called multiple times. And every time a function is called, it's gonna produce a new instance of our module.
 
 [00:06:58]
-We lovingly refer to those as factory functions, okay? This is a workshop module factory function. I can call it once, like I do on line 12, but I could call it a hundred other times and have a hundred other separate instances that all have their own state. They're all separate and they don't mix with each other.
+We lovingly refer to those as factory functions, okay? This is a WorkshopModule factory function. I can call it once, like I do on line 12, but I could call it a hundred other times and have a hundred other separate instances that all have their own state. They're all separate and they don't mix with each other.
 
 [00:07:23]
 And that is the module pattern in a nutshell. The idea that I take some behavior, and data that that behavior operates on, and encapsulate it into a data structure. Hide what I don't need to show, and expose only the minimal necessary API. That's a module. And I would argue that the module pattern is certainly the most prevalent, and potentially the most important of all code organization patterns.
 
 [00:07:48]
-Probably 80, 90% of all JavaScript that's ever been written has used some mechanism like the module pattern as it's code organization pattern. That's not to say you don't have other patterns, like classes, for example, but the module pattern is extremely prevalent and important, and it's important that we understand how it works.
+Probably 80, 90% of all JavaScript that's ever been written has used some mechanism like the module pattern as its code organization pattern. That's not to say you don't have other patterns, like classes, for example, but the module pattern is extremely prevalent and important, and it's important that we understand how it works.
 
 [00:08:09]
 Now, let's all admit that this is sort of a syntactic hack, this is not really like, you wouldn't really call this first class language support for a module. You would call this an idiom, a pattern that we do using the tools in a way that accomplishes some end goal.

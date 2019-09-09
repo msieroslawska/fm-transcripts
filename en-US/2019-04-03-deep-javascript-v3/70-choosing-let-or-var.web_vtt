@@ -33,7 +33,7 @@ it's always done for 24 years.
 7
 00:00:27.112 --> 00:00:30.580
 &gt;&gt; Kyle Simpson: If you were to
-replace the var online with a let,
+replace the var on line 2 with a let,
 
 8
 00:00:30.580 --> 00:00:36.980
@@ -446,7 +446,7 @@ exceptions whatsoever.
 
 93
 00:05:59.870 --> 00:06:04.490
-And I used the var online six
+And I used the var on line six
 because I was trying to disambiguate
 
 94
@@ -494,7 +494,7 @@ I think that it is better that var is
 103
 00:06:33.920 --> 00:06:37.830
 a tool that has a different
-capability then does let.
+capability than does let.
 
 104
 00:06:37.830 --> 00:06:42.669
@@ -718,7 +718,7 @@ we would have said, hey blue scope,
 
 150
 00:09:27.260 --> 00:09:30.210
-hey scope of lookup record,
+hey scope of lookupRecord,
 ever heard of this thing called id?
 
 151

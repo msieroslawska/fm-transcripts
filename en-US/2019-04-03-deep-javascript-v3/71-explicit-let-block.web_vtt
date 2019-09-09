@@ -53,7 +53,7 @@ create a scope just for
 11
 00:00:34.550 --> 00:00:38.380
 those three lines of code to use
-the prefixed and the rest variable, and
+the prefix and the rest variable, and
 
 12
 00:00:38.380 --> 00:00:40.719
@@ -121,7 +121,7 @@ argument purely for semantics, or
 25
 00:01:17.019 --> 00:01:20.760
 is there a performance benefit
-to doing something like that?.
+to doing something like that?
 
 26
 00:01:20.760 --> 00:01:24.500

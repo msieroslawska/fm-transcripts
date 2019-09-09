@@ -78,7 +78,7 @@ weight isn't it?.
 17
 00:00:58.380 --> 00:01:03.140
 It also has less side effects in the sense
-it doesn't redefined anything about
+it doesn't redefine anything about
 
 18
 00:01:03.140 --> 00:01:07.470
@@ -256,7 +256,7 @@ the blue scope, right?
 54
 00:03:15.480 --> 00:03:19.940
 It'll be a blue marble attached
-to the whole function if.
+to the whole function diff.
 
 55
 00:03:19.940 --> 00:03:22.545
@@ -349,12 +349,12 @@ that I wanna have in your
 73
 00:04:38.926 --> 00:04:43.204
 mental thinking is to think
-about that as a replacement for
+about let as a replacement for
 
 74
 00:04:43.204 --> 00:04:47.060
 your already semantically
-signalled block scope.
+signalled block scopes.
 
 75
 00:04:47.060 --> 00:04:51.156

@@ -20,7 +20,7 @@ Uninitialized meaning you can't touch it yet. And it doesn't get initialized unt
 >> Speaker 1: By the way, I sometimes get asked why the TDZ error?
 
 [00:02:30]
-Why did they make this an error? It is much more nuance than you might realize. I used to believe that the primary reason for the TDZ error in this scenario was that, essentially, TC39 was trying to socially engineer you. To stop assigning to variables earlier in scopes than where you've declared them.
+Why did they make this an error? It is much more nuanced than you might realize. I used to believe that the primary reason for the TDZ error in this scenario was that, essentially, TC39 was trying to socially engineer you. To stop assigning to variables earlier in scopes than where you've declared them.
 
 [00:02:50]
 Which again, I generally agree with, but I'm a little annoyed when a language is so heavy handed with its opinions, okay? So I generally would agree with that, and I used to just sort of chaff at the idea that they would have forced me into that decision. But turns out it's much more nuance than that.
@@ -53,7 +53,7 @@ Even though we might like to have different mental models for it, it's what it s
 
 [00:05:33]
 
->> Speaker 1: Yeah, that's a good question. So I don't know if I could find the slide, but if you recall back, when you assign a function expression to a variable, the variables decoration itself hoisted, but the assignment is a run time thing. Imagine mentally the idea of JavaScript reordering your executable code.
+>> Speaker 1: Yeah, that's a good question. So I don't know if I could find the slide, but if you recall back, when you assign a function expression to a variable, the variable's declaration is self hoisted, but the assignment is a run time thing. Imagine mentally the idea of JavaScript reordering your executable code.
 
 [00:05:53]
 We would quickly descend into chaos, right? So executable code can't conceptually be reordered, only declarative code. So we can say that there is a thing called X, or a thing called teacher, and even there is a thing called X that's gonna reference this function scope. We can do that declaratively.

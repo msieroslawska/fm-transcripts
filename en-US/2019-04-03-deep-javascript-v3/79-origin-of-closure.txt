@@ -11,7 +11,7 @@ And when he says something brilliant, he deserves credit for it. Years ago, he h
 And he gave a variety of examples. And when he went to explain why that phenomenon exists, it was sort of a tongue in cheek kind of response or explanation, which is kind of half-true and half-funny. He said, well, the reason why it takes a full generation is because we're so stubborn.
 
 [00:01:34]
-We're stuck in our ways. So we have to wait around for all of the current generation to die or retire llll before the new great idea picks up. [LAUGH] Again, it's like half-true and half-funny. But he went on to say we know that closure must be truly great cuz it took two full generations to catch on.
+We're stuck in our ways. So we have to wait around for all of the current generation to die or retire before the new great idea picks up. [LAUGH] Again, it's like half-true and half-funny. But he went on to say we know that closure must be truly great cuz it took two full generations to catch on.
 
 [00:01:56]
 [LAUGH] We really had to wait for a lot of people to die or retire. It's one of the most prevalent concepts in all of programming. And yet, when it was introduced in JavaScript in the mid to late 90s, it was somewhat of a revolutionary idea that we would take a language that was ostensibly designed for the common man, the consumer-oriented developer, not the academic.

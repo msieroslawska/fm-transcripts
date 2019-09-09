@@ -149,7 +149,7 @@ is an API now rather than being set up,
 33
 00:02:27.498 --> 00:02:32.152
 it's I'm gonna do an extra check that
-makes sure that I'm not try to add
+makes sure that I'm not trying to add
 
 34
 00:02:32.152 --> 00:02:34.183
@@ -161,11 +161,11 @@ So I will do if
 
 36
 00:02:36.427 --> 00:02:45.000
-(!currentEnrollment.includes(id), and
+not currentEnrollment.includes id, and
 
 37
 00:02:45.000 --> 00:02:51.331
-currentEnrollment.push(id).
+currentEnrollment.push id.
 
 38
 00:02:51.331 --> 00:02:56.224
@@ -222,7 +222,7 @@ is doing the same thing as this,
 
 49
 00:03:40.321 --> 00:03:43.787
-which is to call paid students to enroll,
+which is to call paidStudentsToEnroll,
 and
 
 50
@@ -383,7 +383,7 @@ so I missed that [INAUDIBLE].
 
 83
 00:07:38.851 --> 00:07:47.019
-Our enroll paid students needs to update
+Our enrollPaidStudents needs to update
 the enrollment and print those records.
 
 84

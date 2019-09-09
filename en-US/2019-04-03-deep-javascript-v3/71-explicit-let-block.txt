@@ -5,14 +5,14 @@
 I'm going to caution you also that there are lots of times where you're only going to use a variable for a few lines of code, and you should not just throw it into the top level of the scope. What you should do is create a scope for it.
 
 [00:00:30]
-Open up a curly brace pair and create a scope just for those three lines of code to use the prefixed and the rest variable, and then don't let them exist for any other part of the function. Don't just say let, and prefix, and rest at the top of your function, open up a curly brace there.
+Open up a curly brace pair and create a scope just for those three lines of code to use the prefix and the rest variable, and then don't let them exist for any other part of the function. Don't just say let, and prefix, and rest at the top of your function, open up a curly brace there.
 
 [00:00:47]
 As a matter of fact, I do that anywhere, even inside of an if statement. If I have a variable that only needs to exist for a couple of lines, the way to do that is to make a block for it. And that's not a new invention of mine, by the way.
 
 [00:00:59]
 We've done that for 30 years in every other programming language that's ever had block scoping. We open up curly brace pairs and we scope it to the block. All I'm saying is let's do that in JavaScript because it worked really well in other languages, yes?
->> Speaker 2: Are you making this argument purely for semantics, or is there a performance benefit to doing something like that?.
+>> Speaker 2: Are you making this argument purely for semantics, or is there a performance benefit to doing something like that?
 
 [00:01:20]
 

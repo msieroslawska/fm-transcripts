@@ -280,7 +280,7 @@ what has been rather prevalent,
 58
 00:03:39.751 --> 00:03:45.604
 as I have seen, in, I can't even
-count how many Stack Overflow.
+count how many Stack Overflow posts.
 
 59
 00:03:45.604 --> 00:03:49.581
@@ -408,7 +408,7 @@ is a separate issue, but
 85
 00:05:07.121 --> 00:05:10.757
 what I mean,
-I'm the authoritative on the spec, okay?
+I'm the authoritative, I'm the spec, okay?
 
 86
 00:05:10.757 --> 00:05:13.587
@@ -436,12 +436,12 @@ they don't understand stuff.
 91
 00:05:26.506 --> 00:05:31.695
 But here's what was so demoralizing, the
-green check mark and over 4000 uploads.
+green check mark and over 4000 upvotes.
 
 92
 00:05:31.695 --> 00:05:36.433
 Even when I post my little answer
-there is now like 17 uploads,
+there is now like 17 upvotes,
 
 93
 00:05:36.433 --> 00:05:39.518
@@ -515,7 +515,7 @@ into thinking the wrong thing.
 108
 00:06:22.519 --> 00:06:25.609
 Which is why I first taught
-you ow it really works, and
+you how it really works, and
 
 109
 00:06:25.609 --> 00:06:30.214
@@ -573,7 +573,7 @@ variables, it doesn't lose functions.
 120
 00:07:05.697 --> 00:07:11.560
 It handle them during the first pass,
-and then it execute.
+and then it executes.
 
 121
 00:07:11.560 --> 00:07:15.862
@@ -588,12 +588,12 @@ declaration and a function expression.
 123
 00:07:20.505 --> 00:07:25.997
 A number of you were asking when we were
-talking about error functions, hey well,
+talking about arrow functions, hey well,
 
 124
 00:07:25.997 --> 00:07:31.349
 isn't it okay if I just assign my favorite
-loving error function to a variable?
+loving arrow function to a variable?
 
 125
 00:07:31.349 --> 00:07:32.240
@@ -611,7 +611,7 @@ It depends.
 128
 00:07:34.433 --> 00:07:39.267
 In this particular example, we have the
-functions having to move to the top, but
+functions having been moved to the top, but
 
 129
 00:07:39.267 --> 00:07:42.893
@@ -778,7 +778,7 @@ And as with most things, it kinda depends,
 
 164
 00:09:32.524 --> 00:09:38.111
-it depend on your perspective of
+it depends on your perspective of
 what you're trying to accomplish.
 
 165

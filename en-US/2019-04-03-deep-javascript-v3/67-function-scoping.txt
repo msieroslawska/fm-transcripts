@@ -19,7 +19,7 @@ That doesn't really fix this problem. The real problem, the real root problem, i
 
 [00:01:44]
 
->> Kyle Simpson: In the same scope. So how do we resolve this problem where we can't have two different usages of the same name in the same scope without them conflicting, without them colliding, but how do we fix that? Well, naturally, we could put them in different buckets. And the best way that we've seen thus far Is to wrap a function around it.
+>> Kyle Simpson: In the same scope. So how do we resolve this problem where we can't have two different usages of the same name in the same scope without them conflicting, without them colliding, but how do we fix that? Well, naturally, we could put them in different buckets. And the best way that we've seen thus far is to wrap a function around it.
 
 [00:02:06]
 So if I make anotherTeacher function here and I declare line 4 that variable, now it's a different colored marble, right? It's a blue marble, not a red marble. So that variable doesn't end up conflicting with the one in line 10, everything still works. The problem is that now I have a function that has a name in that scope.

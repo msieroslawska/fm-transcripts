@@ -189,11 +189,11 @@ recognize right off the bat.
 40
 00:02:08.950 --> 00:02:13.606
 Surely, all of you have done a timer at
-some point or another, a set timeout or
+some point or another, a setTimeout or
 
 41
 00:02:13.606 --> 00:02:17.761
-a set interval, and I bet when you
+a setInterval, and I bet when you
 passed in a function to your timer,
 
 42

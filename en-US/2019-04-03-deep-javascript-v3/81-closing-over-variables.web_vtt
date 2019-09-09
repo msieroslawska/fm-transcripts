@@ -251,8 +251,8 @@ we need to make new scopes, right?
 
 54
 00:03:12.400 --> 00:03:16.250
-So we could do an iffy here, but the much
-more common way now that we have ES six,
+So we could do an IIFE here, but the much
+more common way now that we have ES6,
 
 55
 00:03:16.250 --> 00:03:17.810
@@ -314,7 +314,7 @@ JavaScript developers for like 20 years.
 
 67
 00:04:09.070 --> 00:04:12.997
-They decided with iOS six, well,
+They decided with ES6, well,
 why don't we just go ahead and
 
 68

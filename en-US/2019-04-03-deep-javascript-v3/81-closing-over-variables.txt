@@ -27,7 +27,7 @@ This is not hard math. If we wanted three separate values, how many variables do
 We can't effectively use closure until we separate ourselves from that perception of capturing values. It's not capturing a value, preserving access to a variable, okay? So, if we wanted to solve this problem, and we analyzed that, I need separate variables, we've seen several multiple different examples of how to create variables.
 
 [00:03:06]
-If we wanna create more than one variable with the same name, we need to make new scopes, right? So we could do an iffy here, but the much more common way now that we have ES six, now that we have blockscoping, is to just stick a block scoped declaration in the iteration.
+If we wanna create more than one variable with the same name, we need to make new scopes, right? So we could do an IIFE here, but the much more common way now that we have ES6, now that we have blockscoping, is to just stick a block scoped declaration in the iteration.
 
 [00:03:22]
 So now let j is going to run every time the 4 loop iterates. And it's gonna create a whole new j in that whole new iteration of the loop. When we close over it on line 4, we are closing over a whole new j. There are three separate js and therefore we get the values in them 1, 2, and 3.
@@ -36,7 +36,7 @@ So now let j is going to run every time the 4 loop iterates. And it's gonna crea
 See the difference between capturing a value and closing over a variable? It turns out there's an even, I think better some people might say trickier, but there's an even better way of solving this problem. Because that perpetual problem of I'm doing for var i and my closures aren't capturing the value.
 
 [00:04:03]
-That's been a problem for JavaScript developers for like 20 years. They decided with iOS six, well, why don't we just go ahead and make it so that if you use a let on your for loop we'll automatically create a new i for each iteration. Instead of creating just one that belongs to the whole for loop here there's gonna be a brand new i for each iteration.
+That's been a problem for JavaScript developers for like 20 years. They decided with ES6, well, why don't we just go ahead and make it so that if you use a let on your for loop we'll automatically create a new i for each iteration. Instead of creating just one that belongs to the whole for loop here there's gonna be a brand new i for each iteration.
 
 [00:04:26]
 Which means the closure just magically works, okay? The point is if you need multiple different values being closed over you need multiple different variables. You need to close over different variables, not try to capture values.

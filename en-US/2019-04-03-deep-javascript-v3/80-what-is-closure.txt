@@ -17,7 +17,7 @@ And we would think, normally, it's been garbage collected, it's done. But there'
 That doesn't happen by accident. That's not magical, that's closure. The preservation, the linkage back to the original scope where it was defined, no matter where you pass that value, no matter where it executes, it retains that value. It preserves that scope. That's called closure. So let's take a look at a couple of examples, ones that you'll probably recognize right off the bat.
 
 [00:02:08]
-Surely, all of you have done a timer at some point or another, a set timeout or a set interval, and I bet when you passed in a function to your timer, it referenced some variable outside of itself. What's also probably true is you never stopped to consider, how does that work?
+Surely, all of you have done a timer at some point or another, a setTimeout or a setInterval, and I bet when you passed in a function to your timer, it referenced some variable outside of itself. What's also probably true is you never stopped to consider, how does that work?
 
 [00:02:25]
 Because at the time that this function waitASec runs, the ask function has already finished, and the variable question which its closed over should have gone away. But it didn't go away because closure preserved it, so-called the waitASec function is closed over the variable question. That's a closure, okay?

@@ -255,7 +255,7 @@ the .call method.
 53
 00:03:28.374 --> 00:03:32.090
 The .call method along with it's cousin,
-.dot apply method,
+.apply method,
 
 54
 00:03:32.090 --> 00:03:37.290
@@ -378,7 +378,7 @@ ran ten milliseconds from now?
 
 78
 00:05:18.299 --> 00:05:24.250
-And that call site would look like cb[],
+And that call site would look like cb(),
 or something like that.
 
 79
@@ -399,7 +399,7 @@ we end up getting undefined.
 82
 00:05:37.904 --> 00:05:43.266
 Actually just as side note,
-technically, the set timeout utility
+technically, the setTimeout utility
 
 83
 00:05:43.266 --> 00:05:48.721
@@ -424,7 +424,7 @@ yes?
 87
 00:06:08.980 --> 00:06:13.469
 &gt;&gt; Speaker 2: Would this be unnecessary
-if ask were to find us an arrow function?
+if ask were defined as an arrow function?
 
 88
 00:06:15.500 --> 00:06:18.330
@@ -601,7 +601,7 @@ a this aware set of code, and
 
 124
 00:08:34.330 --> 00:08:39.510
-then most of my core sites
+then most of my call sites
 are using the flexible dynamism,
 
 125
@@ -625,7 +625,7 @@ trouble to write a this aware system and
 
 129
 00:08:51.920 --> 00:08:57.560
-then everyone or most of my calls sites
+then everyone or most of my call sites
 have to use not bind, that's a clue to me.
 
 130

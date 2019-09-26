@@ -29,7 +29,7 @@ Here I benefit from the flexibility of being able to share one function across d
 
 [00:03:13]
 Here we're seeing the flexibility benefit of the this keyword.
->> Kyle: There's another way to invoke functions, we saw this just a couple of slides ago, the .call method. The .call method along with it's cousin, .dot apply method, both of them take, as their first argument, a this keyword.
+>> Kyle: There's another way to invoke functions, we saw this just a couple of slides ago, the .call method. The .call method along with it's cousin, .apply method, both of them take, as their first argument, a this keyword.
 
 [00:03:37]
 So on line 13, when we say .call and we pass in workshop1, it is saying invoke the ask function with the this context of workshop1. It's very similar to the previous slide, we are still sharing that function, but now we're doing so explicitly rather than implicitly. We're saying wherever this function comes from, invoke it in a particular context which I'm going to specify.
@@ -45,11 +45,11 @@ If you've ever worked with a function that you pass around, and all of a sudden,
 So variation of explicit binding is called hard binding. Looking at line 8, if I passed in workshop.ask, that method is on the workshop object, but that line 8 is not the call site. You have to imagine in your head, what would the call site look like for the function whenever that timer ran ten milliseconds from now?
 
 [00:05:18]
-And that call site would look like cb[], or something like that. It's not going to look like workshop.ask, and because it doesn't look like that, it's not going to invoke ask in a workshop context. Which is we've lost our this binding, we end up getting undefined. Actually just as side note, technically, the set timeout utility is defined by HTML, it's not evoking it just with the default call, it actually explicitly invokes it with a .call in the context of global.
+And that call site would look like cb(), or something like that. It's not going to look like workshop.ask, and because it doesn't look like that, it's not going to invoke ask in a workshop context. Which is we've lost our this binding, we end up getting undefined. Actually just as side note, technically, the setTimeout utility is defined by HTML, it's not evoking it just with the default call, it actually explicitly invokes it with a .call in the context of global.
 
 [00:05:55]
 So it would actually invoke workshop.ask by saying cb.call window, essentially. Invoking it in the global object context, yes?
->> Speaker 2: Would this be unnecessary if ask were to find us an arrow function?
+>> Speaker 2: Would this be unnecessary if ask were defined as an arrow function?
 >> Kyle: Ask here as an arrow function would not solve the problem, but we are gonna talk about arrow functions in just a moment, so we'll come back that.
 
 [00:06:24]
@@ -71,10 +71,10 @@ Because the whole purpose of this system, the whole reason that you pay the tax 
 So how do we deal with this tension? We like using the this keyword, it can be useful to us, but there are times when we need it to not be so flexible. I can't solve that tension for you, but I can just give you a sort of heuristic that I use.
 
 [00:08:30]
-If I go to the trouble to write a this aware set of code, and then most of my core sites are using the flexible dynamism, and every once in a while I have to do something like a hard binding. Then I'm getting a lot of benefits out of that system, seems like a reasonable trade-off.
+If I go to the trouble to write a this aware set of code, and then most of my call sites are using the flexible dynamism, and every once in a while I have to do something like a hard binding. Then I'm getting a lot of benefits out of that system, seems like a reasonable trade-off.
 
 [00:08:48]
-On the other hand, if I go to all the trouble to write a this aware system and then everyone or most of my calls sites have to use not bind, that's a clue to me. I'm doing this the hard way. I should switch back and use the predictable lexical closure.
+On the other hand, if I go to all the trouble to write a this aware system and then everyone or most of my call sites have to use not bind, that's a clue to me. I'm doing this the hard way. I should switch back and use the predictable lexical closure.
 
 [00:09:03]
 In other words, there's a better tool use, there's a better way to use the tool. Use what it's good at. If we want flexible dynamism, use a this keyword, if we want predictability, use closures, use lexical scope.

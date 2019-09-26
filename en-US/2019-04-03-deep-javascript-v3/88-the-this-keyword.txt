@@ -30,7 +30,7 @@ Because ask was called from line 10 it was called from the other class scope, th
 So here I have a version of the ask function which is this aware, it uses a this keyword, so it's this aware. And you'll notice that I'm calling it from some other location but that doesn't matter. It's not where I call from, it's how I call it. If I use ask.call here, I am saying use this particular object as your this keyword, and invoke the function in that context.
 
 [00:03:49]
-So this keyword in this particular case, will end up pointing at my context. So you see that sort of dynamic flexibility happening here. You see that I could call that same ask function, lots of different ways. And provide lots of different context objects for the this keyword point on, that's the dynamic flexible reusability of the this keyword.
+So this keyword in this particular case, will end up pointing at my context. So you see that sort of dynamic flexibility happening here. You see that I could call that same ask function, lots of different ways. And provide lots of different context objects for the this keyword to point at, that's the dynamic flexible reusability of the this keyword.
 
 [00:04:12]
 That's why it exists by the way, it exists so that we can invoke functions in these different contexts.
